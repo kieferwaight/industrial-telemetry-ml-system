@@ -1,0 +1,56 @@
+{
+  "package_name": "industrial-telemetry-ml-system",
+  "package_version": "v1",
+  "created_at_context": "2026-05-12 13:33 America/Chicago",
+  "purpose": "Unified synthetic experiment package for compactor raw telemetry parsing, waveform classification, anomaly handling, and known-label inference demonstrations.",
+  "components": {
+    "raw_payload_runs": {
+      "path": "raw_payload_runs/",
+      "schema_version": "mock_compactor_run.v1",
+      "records": 726,
+      "scenario_count": 14,
+      "primary_files": [
+        "all_runs.jsonl",
+        "scenarios/*.jsonl",
+        "manifest.json",
+        "schema.json",
+        "validation_summary.csv",
+        "generate_mock_compaction_data.py"
+      ],
+      "best_for": [
+        "payload parser tests",
+        "base64 CSV decoding",
+        "double-run split detection",
+        "truncation/dropout/saturation edge cases"
+      ]
+    },
+    "clean_waveform_benchmark": {
+      "path": "clean_waveform_benchmark/",
+      "schema_version": "clean_compactor_waveform_benchmark.v1",
+      "records": 442,
+      "scenario_count": 18,
+      "graph_count": 20,
+      "primary_files": [
+        "clean_waveform_dataset.json",
+        "clean_waveform_dataset.jsonl",
+        "graphs/*.png",
+        "reference_image_classification.md",
+        "inference_demo.py",
+        "generate_waveform_benchmark.py"
+      ],
+      "best_for": [
+        "known-label waveform classification",
+        "feature engineering demonstrations",
+        "site-class tuning examples",
+        "documentation graphics"
+      ]
+    }
+  },
+  "recommended_start": "Run python clean_waveform_benchmark/inference_demo.py, then test raw_payload_runs/all_runs.jsonl with your production parser.",
+  "known_signal_principles": [
+    "Startup spikes are modeled but should not be treated as fill indicators.",
+    "Full/high-resistance cycles shift peak resistance earlier in the cycle.",
+    "Site class and device fingerprint can change amplitude, duration, variance, and model confidence.",
+    "Raw-stream quality issues such as double-runs, truncation, dropout, weak signal, and saturation should be handled before model training."
+  ]
+}

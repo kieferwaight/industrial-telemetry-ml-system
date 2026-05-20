@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mock Compactor Run Record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "record_id",
+    "source",
+    "device",
+    "run",
+    "raw_stream",
+    "latest_message"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "mock_compactor_run.v1"
+    },
+    "record_id": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object"
+    },
+    "device": {
+      "type": "object"
+    },
+    "site": {
+      "type": "object"
+    },
+    "run": {
+      "type": "object"
+    },
+    "raw_stream": {
+      "type": "object"
+    },
+    "latest_message": {
+      "type": "object"
+    }
+  }
+}

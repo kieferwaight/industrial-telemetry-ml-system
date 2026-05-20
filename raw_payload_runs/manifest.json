@@ -1,0 +1,156 @@
+{
+  "name": "mock_compaction_jsonl_runs",
+  "schema_version": "mock_compactor_run.v1",
+  "generated_at_utc": "2026-05-12T18:16:58.604716+00:00",
+  "generator": "generate_mock_compaction_data.py",
+  "seed": 424242,
+  "basis": {
+    "real_reference_samples": 147,
+    "real_reference_split_index": 41,
+    "expected_single_samples": 70,
+    "normal_operating_band_approx": [
+      29000,
+      44000
+    ],
+    "sync_artifact_example": 58786
+  },
+  "scenarios": [
+    {
+      "name": "base_single_light",
+      "count": 80,
+      "label": "standard_single_run",
+      "description": "Clean single compaction cycles with lower load and modest peak pressure.",
+      "file_name": "base_single_light.jsonl"
+    },
+    {
+      "name": "base_single_medium",
+      "count": 100,
+      "label": "standard_single_run",
+      "description": "Clean single compaction cycles close to the case-study operating band.",
+      "file_name": "base_single_medium.jsonl"
+    },
+    {
+      "name": "base_single_heavy_near_full",
+      "count": 80,
+      "label": "standard_single_run",
+      "description": "Clean single cycles with elevated baseline and peaks suggesting high fullness.",
+      "file_name": "base_single_heavy_near_full.jsonl"
+    },
+    {
+      "name": "double_run_clear",
+      "count": 90,
+      "label": "double_run",
+      "description": "Two back-to-back compaction cycles in one payload with a sharp drop and re-ramp.",
+      "file_name": "double_run_clear.jsonl"
+    },
+    {
+      "name": "double_run_late_boundary",
+      "count": 45,
+      "label": "double_run",
+      "description": "Double-runs where the first run is longer and the boundary appears later than expected.",
+      "file_name": "double_run_late_boundary.jsonl"
+    },
+    {
+      "name": "double_run_ambiguous_boundary",
+      "count": 45,
+      "label": "double_run",
+      "description": "Double-runs with a shallower transition drop near the detector threshold.",
+      "file_name": "double_run_ambiguous_boundary.jsonl"
+    },
+    {
+      "name": "single_run_deep_dip_false_positive_risk",
+      "count": 45,
+      "label": "standard_single_run_with_dip",
+      "description": "Single cycles with a transient dip but no sustained re-ramp boundary.",
+      "file_name": "single_run_deep_dip_false_positive_risk.jsonl"
+    },
+    {
+      "name": "startup_spike_extreme_sync",
+      "count": 40,
+      "label": "startup_spike",
+      "description": "Payloads with oversized sync/startup artifacts that must not affect metrics.",
+      "file_name": "startup_spike_extreme_sync.jsonl"
+    },
+    {
+      "name": "truncated_payload",
+      "count": 40,
+      "label": "truncated",
+      "description": "Partial transmissions with too few samples to trust as full cycles.",
+      "file_name": "truncated_payload.jsonl"
+    },
+    {
+      "name": "peak_saturation",
+      "count": 35,
+      "label": "peak_saturation",
+      "description": "Runs clipping at an ADC-like ceiling, hiding true peak pressure.",
+      "file_name": "peak_saturation.jsonl"
+    },
+    {
+      "name": "low_battery_weak_signal_noisy",
+      "count": 35,
+      "label": "low_power_noisy",
+      "description": "Runs with weak signal, low battery, and high noise/dropout risk.",
+      "file_name": "low_battery_weak_signal_noisy.jsonl"
+    },
+    {
+      "name": "baseline_drift",
+      "count": 40,
+      "label": "baseline_drift",
+      "description": "Sequential-looking records where low/baseline values drift upward over time.",
+      "file_name": "baseline_drift.jsonl"
+    },
+    {
+      "name": "dropout_missing_values",
+      "count": 30,
+      "label": "dropout_missing_values",
+      "description": "Payloads that preserve blank CSV slots from intermittent sensor/transmission gaps.",
+      "file_name": "dropout_missing_values.jsonl"
+    },
+    {
+      "name": "triple_run_buffered",
+      "count": 20,
+      "label": "multi_run",
+      "description": "Three buffered cycles in one message for stress-testing split logic.",
+      "file_name": "triple_run_buffered.jsonl"
+    }
+  ],
+  "validation_summary": {
+    "record_count": 726,
+    "scenario_counts": {
+      "base_single_light": 80,
+      "base_single_medium": 100,
+      "base_single_heavy_near_full": 80,
+      "double_run_clear": 90,
+      "double_run_late_boundary": 45,
+      "double_run_ambiguous_boundary": 45,
+      "single_run_deep_dip_false_positive_risk": 45,
+      "startup_spike_extreme_sync": 40,
+      "truncated_payload": 40,
+      "peak_saturation": 35,
+      "low_battery_weak_signal_noisy": 35,
+      "baseline_drift": 40,
+      "dropout_missing_values": 30,
+      "triple_run_buffered": 20,
+      "real_double_run_reference": 1
+    },
+    "label_counts": {
+      "standard_single_run": 260,
+      "double_run": 181,
+      "standard_single_run_with_dip": 45,
+      "startup_spike": 40,
+      "truncated": 40,
+      "peak_saturation": 35,
+      "low_power_noisy": 35,
+      "baseline_drift": 40,
+      "dropout_missing_values": 30,
+      "multi_run": 20
+    },
+    "sample_count_min": 18,
+    "sample_count_max": 214,
+    "sample_count_mean": 88.03,
+    "power_low_min": 25000,
+    "power_peak_max": 51378,
+    "records_with_missing_value_slots": 30,
+    "records_with_split_indices": 201
+  }
+}
