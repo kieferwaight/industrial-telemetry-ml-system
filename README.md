@@ -6,6 +6,47 @@
 
 Direct link: [The Compactor Became The Sensor - Kiefer Waight - Applied Machine Learning.pdf](The%20Compactor%20Became%20The%20Sensor%20-%20Kiefer%20Waight%20-%20Applied%20Machine%20Learning.pdf)
 
+## What This System Does
+
+This system infers compactor fill-level using electrical signals.
+
+Input:
+- current waveform
+- cycle timing
+- load behavior
+
+Output:
+- inferred fill level
+- service recommendation
+- confidence score
+
+## Example
+
+Input:
+- peak_current: 18.2A
+- cycle_duration: 42s
+- compression_variance: high
+
+Output:
+- state: nearing full
+- action: schedule pickup
+- confidence: 0.91
+
+## Feature Engineering
+
+Signals -> Features:
+- waveform -> peak_current, ramp_rate
+- cycle timing -> duration, frequency
+- load behavior -> resistance proxy, energy
+
+Features -> Model -> Decision
+
+## Visual Anchor
+
+Waveform segmentation and state contrast (empty vs full) are shown here:
+
+![Empty vs full waveform overlay](case-study/assets/figure-diagram-empty-vs-full-waveform-overlay.png)
+
 ## What This Repository Contains
 
 This repo contains:
