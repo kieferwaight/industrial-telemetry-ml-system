@@ -32,6 +32,15 @@ Output:
 - action: schedule pickup
 - confidence: 0.91
 
+## Example Output
+
+```text
+Cycle Classification: HIGH_RESISTANCE
+Fill State: 92%
+Recommended Action: Schedule Service
+Confidence: 0.89
+```
+
 ## Feature Engineering
 
 Signals -> Features:
@@ -47,6 +56,11 @@ Waveform segmentation and state contrast (empty vs full) are shown here:
 
 ![Empty vs full waveform overlay](case-study/assets/figure-diagram-empty-vs-full-waveform-overlay.png)
 
+Normal vs high-resistance crush-cycle traces are shown here:
+
+![Normal crush cycle waveform](case-study/assets/figure_2.1_compactor_crush_cycle_baseline.png)
+![High-resistance crush cycle waveform](case-study/assets/figure_2.2_compactor_crush_cycle_high_resistance.png)
+
 ## What This Repository Contains
 
 This repo contains:
@@ -59,7 +73,7 @@ This repo contains:
 ## Technical Snapshot
 
 - Domain: industrial telemetry and condition-based dispatch for compactor operations
-- Scope: sensing pipeline, feature engineering, model evolution, drift handling, and operations integration
+- Scope: sensing pipeline, feature engineering, fill-level inference, drift handling, and operations integration
 - Scale context: 1,000+ monitored locations across 46 states with 24/7 telemetry
 - Data policy: all published datasets in this repository are synthetic
 - Runtime footprint: Python standard library only for included scripts and demos
@@ -77,7 +91,7 @@ This repo contains:
 
 Real-world artificial intelligence and machine learning for industrial telemetry, deployed in active operations across 1,000+ customer locations in 46 states.
 
-This repository centers on a practical, production-proven idea: use non-invasive electromagnetic sensing to turn compactors into continuous operational intelligence systems.
+This repository centers on a practical, production-proven idea: use non-invasive electromagnetic sensing to turn compactors into continuous operational intelligence systems with fill-level inference.
 
 ## Latest Case Study Release
 
