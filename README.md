@@ -6,6 +6,29 @@
 
 Direct link: [The Compactor Became The Sensor - Kiefer Waight - Applied Machine Learning.pdf](The%20Compactor%20Became%20The%20Sensor%20-%20Kiefer%20Waight%20-%20Applied%20Machine%20Learning.pdf)
 
+## What This Repository Contains
+
+This repo contains:
+- a full applied ML case study
+- synthetic raw telemetry payloads
+- clean waveform benchmark data
+- parser/anomaly test scenarios
+- a dependency-light inference demo
+
+## Technical Snapshot
+
+- Domain: industrial telemetry and condition-based dispatch for compactor operations
+- Scope: sensing pipeline, feature engineering, model evolution, drift handling, and operations integration
+- Scale context: 1,000+ monitored locations across 46 states with 24/7 telemetry
+- Data policy: all published datasets in this repository are synthetic
+- Runtime footprint: Python standard library only for included scripts and demos
+
+## GitHub Repository Metadata
+
+- Description: Applied ML case study for industrial telemetry, waveform inference, and condition-based dispatch
+- Topics: machine-learning, mlops, iot, telemetry, time-series, signal-processing, industrial-ai, synthetic-data
+- Optional automation: [.github/settings.yml](.github/settings.yml) is included for repositories that use settings sync tooling
+
 [![Applied AI](https://img.shields.io/badge/Applied%20AI-Production%20Deployed-0b7a75?style=for-the-badge)](case-study/README.md)
 [![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Operational%20Intelligence-005f73?style=for-the-badge)](case-study/README.md)
 [![Scale](https://img.shields.io/badge/Scale-1000%2B%20Locations%20%7C%2046%20States-9b2226?style=for-the-badge)](case-study/README.md#deployment-scale)
@@ -21,12 +44,18 @@ This repository centers on a practical, production-proven idea: use non-invasive
 - Last updated: May 2026
 - Scope: full technical narrative from sensing hardware to dispatch automation and business outcomes
 
-## Why This Repository Stands Out
+## Project Highlights
 
 - Real applied AI and ML, not a toy notebook
 - Deployment reality at national scale
 - Closed-loop learning with ground-truth feedback from operations
 - End-to-end view from signal capture to decision automation
+
+## Inference Demo Scope Note
+
+The classifier in [clean_waveform_benchmark/inference_demo.py](clean_waveform_benchmark/inference_demo.py) is intentionally simple (k-nearest neighbors) to make inference mechanics inspectable in a dependency-light script.
+
+It demonstrates feature extraction, train/test evaluation, confusion behavior, and confidence output format. It is educational and not a claim that production architecture was KNN-based.
 
 ## Featured System Visuals
 
@@ -81,7 +110,7 @@ This repository centers on a practical, production-proven idea: use non-invasive
 
 For section-level links across all chapters, use the full index in [case-study/README.md](case-study/README.md).
 
-## Quick Start
+## What You Can Run
 
 ### Read the full narrative
 
@@ -93,17 +122,66 @@ For section-level links across all chapters, use the full index in [case-study/R
 python3 clean_waveform_benchmark/inference_demo.py
 ```
 
+Expected output (abridged):
+
+```text
+Training rows: <n>
+Test rows: <m>
+
+Target: site_class
+Accuracy: <value> (<correct>/<total>)
+
+Target: fill_state
+Accuracy: <value> (<correct>/<total>)
+
+Single-row inference example:
+{
+	"record_id": "...",
+	"predicted_site_class": "...",
+	"predicted_fill_state": "...",
+	"site_confidence": ...,
+	"fill_confidence": ...
+}
+```
+
+### Regenerate synthetic raw payload runs
+
+```bash
+python3 raw_payload_runs/generate_mock_compaction_data.py
+```
+
+Expected output (abridged):
+
+```text
+Wrote <k> records to raw_payload_runs/all_runs.jsonl
+Wrote scenario files to raw_payload_runs/scenarios/
+```
+
 ### Explore the supporting datasets
 
 - [clean_waveform_benchmark/README.md](clean_waveform_benchmark/README.md)
 - [raw_payload_runs/README.md](raw_payload_runs/README.md)
 - [unified_manifest.json](unified_manifest.json)
 
+### Run convenience targets
+
+```bash
+make run-demo
+make generate-raw
+make test
+```
+
 ## Repository Layout
 
 ```text
 industrial-telemetry-ml-system/
 |- README.md
+|- LICENSE
+|- CITATION.cff
+|- CONTRIBUTING.md
+|- SECURITY.md
+|- Makefile
+|- requirements.txt
 |- unified_manifest.json
 |- case-study/
 |  |- README.md
@@ -118,8 +196,15 @@ industrial-telemetry-ml-system/
 |- raw_payload_runs/
 |  |- README.md
 |  |- all_runs.jsonl
+|  |- generate_mock_compaction_data.py
 |  |- scenarios/
 |  |- schema.json
+|- models/
+|  |- README.md
+|- notebooks/
+|  |- README.md
+|- tests/
+|  |- test_repo_smoke.py
 ```
 
 ## Contact and Research Collaboration

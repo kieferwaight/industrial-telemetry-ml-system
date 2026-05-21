@@ -1,0 +1,2 @@
+# This repository uses Python standard library only for included scripts.
+# Kept intentionally empty for reproducibility and dependency clarity.

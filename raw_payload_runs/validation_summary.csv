@@ -1,11 +1,11 @@
 metric,value
-record_count,726
-scenario_counts,"{""base_single_light"": 80, ""base_single_medium"": 100, ""base_single_heavy_near_full"": 80, ""double_run_clear"": 90, ""double_run_late_boundary"": 45, ""double_run_ambiguous_boundary"": 45, ""single_run_deep_dip_false_positive_risk"": 45, ""startup_spike_extreme_sync"": 40, ""truncated_payload"": 40, ""peak_saturation"": 35, ""low_battery_weak_signal_noisy"": 35, ""baseline_drift"": 40, ""dropout_missing_values"": 30, ""triple_run_buffered"": 20, ""real_double_run_reference"": 1}"
-label_counts,"{""standard_single_run"": 260, ""double_run"": 181, ""standard_single_run_with_dip"": 45, ""startup_spike"": 40, ""truncated"": 40, ""peak_saturation"": 35, ""low_power_noisy"": 35, ""baseline_drift"": 40, ""dropout_missing_values"": 30, ""multi_run"": 20}"
+record_count,725
+scenario_counts,"{""base_single_light"": 80, ""base_single_medium"": 100, ""base_single_heavy_near_full"": 80, ""double_run_clear"": 90, ""double_run_late_boundary"": 45, ""double_run_ambiguous_boundary"": 45, ""single_run_deep_dip_false_positive_risk"": 45, ""startup_spike_extreme_sync"": 40, ""truncated_payload"": 40, ""peak_saturation"": 35, ""low_battery_weak_signal_noisy"": 35, ""baseline_drift"": 40, ""dropout_missing_values"": 30, ""triple_run_buffered"": 20}"
+label_counts,"{""standard_single_run"": 260, ""double_run"": 180, ""standard_single_run_with_dip"": 45, ""startup_spike"": 40, ""truncated"": 40, ""peak_saturation"": 35, ""low_power_noisy"": 35, ""baseline_drift"": 40, ""dropout_missing_values"": 30, ""multi_run"": 20}"
 sample_count_min,18
 sample_count_max,214
-sample_count_mean,88.03
+sample_count_mean,87.94
 power_low_min,25000
 power_peak_max,51378
 records_with_missing_value_slots,30
-records_with_split_indices,201
+records_with_split_indices,200

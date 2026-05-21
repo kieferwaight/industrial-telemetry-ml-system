@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: Industrial Telemetry ML System
+authors:
+  - family-names: Waight
+    given-names: Kiefer
+    email: kiefer.waight@uta.edu
+message: If you use this repository for research or reference, please cite it using this metadata.
+repository-code: https://github.com/kieferwaight/industrial-telemetry-ml-system
+abstract: Applied ML case study for industrial telemetry, waveform inference, and condition-based dispatch using synthetic public datasets.
+license: MIT
+keywords:
+  - machine-learning
+  - mlops
+  - iot
+  - telemetry
+  - time-series
+  - signal-processing
+  - industrial-ai
+  - synthetic-data

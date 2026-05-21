@@ -10,6 +10,11 @@ The output is intentionally modeled after the real CD2.2-006 payload:
 
 This script creates a large set of synthetic records spanning base cases and the
 edge cases described in the case-study analysis.
+
+NOTE:
+- This script generates synthetic-only artifacts.
+- It is runnable from a fresh clone using only repository files.
+- Committed JSONL files remain canonical for review diffs.
 """
 
 from __future__ import annotations
@@ -29,9 +34,10 @@ from pathlib import Path
 from typing import Iterable
 
 
-WORKSPACE = Path("/home/user/workspace")
-OUT_DIR = WORKSPACE / "mock_compaction_jsonl_runs"
-ZIP_PATH = WORKSPACE / "mock_compaction_jsonl_runs.zip"
+RAW_PAYLOAD_DIR = Path(__file__).resolve().parent
+WORKSPACE = RAW_PAYLOAD_DIR.parent
+OUT_DIR = RAW_PAYLOAD_DIR
+ZIP_PATH = OUT_DIR / "mock_compaction_jsonl_runs.zip"
 
 
 @dataclass(frozen=True)
@@ -145,12 +151,26 @@ SCENARIOS = [
 ]
 
 
-def extract_real_b64() -> str:
-    text = (WORKSPACE / "parse_and_graph.py").read_text()
-    match = re.search(r"SAMPLE_B64\s*=\s*\((.*?)\)", text, flags=re.S)
-    if not match:
-        raise RuntimeError("Could not locate SAMPLE_B64 in parse_and_graph.py")
-    return "".join(re.findall(r'"([^"]+)"', match.group(1)))
+def extract_reference_b64() -> str:
+    parse_script = WORKSPACE / "parse_and_graph.py"
+    if parse_script.exists():
+        text = parse_script.read_text()
+        match = re.search(r"SAMPLE_B64\s*=\s*\((.*?)\)", text, flags=re.S)
+        if match:
+            return "".join(re.findall(r'"([^"]+)"', match.group(1)))
+
+    # Public fallback: bootstrap from the first committed synthetic record.
+    bundled = Path(__file__).with_name("all_runs.jsonl")
+    if bundled.exists():
+        for line in bundled.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            record = json.loads(line)
+            b64_data = record.get("raw_stream", {}).get("base64_data")
+            if b64_data:
+                return b64_data
+
+    raise RuntimeError("No calibration base64 stream found in parse_and_graph.py or all_runs.jsonl")
 
 
 def decode_blob(b64: str) -> tuple[str, int, list[int], int, int]:
@@ -597,19 +617,15 @@ For experiments, calculate metrics from `raw_stream.decoded_values` after removi
 
 def main() -> None:
     rng = random.Random(424242)
-    real_b64 = extract_real_b64()
+    real_b64 = extract_reference_b64()
     _, real_sync, real_values, real_battery, real_signal = decode_blob(real_b64)
     base_time = datetime(2018, 4, 2, 16, 10, 58, tzinfo=timezone.utc)
 
-    if OUT_DIR.exists():
-        for path in sorted(OUT_DIR.rglob("*"), reverse=True):
-            if path.is_file():
-                path.unlink()
-            elif path.is_dir():
-                path.rmdir()
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     scenario_dir = OUT_DIR / "scenarios"
     scenario_dir.mkdir(exist_ok=True)
+    for old_path in sorted(scenario_dir.glob("*.jsonl")):
+        old_path.unlink()
 
     all_records: list[dict] = []
     global_index = 0
@@ -625,13 +641,13 @@ def main() -> None:
     # Include a known-real-reference line so downstream experiments can compare the synthetic set
     # to the original decoded series without treating the original customer payload as mock data.
     real_metric = stats(real_values)
-    real_reference = {
+    legacy_reference_obscured = {
         "schema_version": "mock_compactor_run.v1",
-        "record_id": "real-reference-cd2-2-006-20180402",
+        "record_id": "legacy-reference-obscured-20180402",
         "source": {
-            "kind": "real_reference",
-            "derived_from": "attached payload.json / parse_and_graph.py",
-            "scenario": "real_double_run_reference",
+            "kind": "legacy_reference_obscured",
+            "derived_from": "private calibration sample (obscured)",
+            "scenario": "legacy_double_run_reference",
         },
         "device": {
             "device_id": 120177,
@@ -644,12 +660,12 @@ def main() -> None:
             "material_type": "MSW (Compacted)",
             "capacity_cy": 32,
         },
-        "site": {"site_id": 10, "site_name": "US Steel - MSW", "timezone": "UTC", "location_type": "commercial_highrise"},
+        "site": {"site_id": 10, "site_name": "Reference Site - Obscured", "timezone": "UTC", "location_type": "commercial_highrise"},
         "run": {
             "run_start": "2018-04-02 16:10:58",
             "logged": "2018-04-02 20:10:59",
             "anomaly_label": "double_run",
-            "scenario_description": "Original case-study run included for calibration/reference.",
+            "scenario_description": "Legacy calibration run included as an obscured reference sample.",
             "split_indices": [41],
             "usable_sample_count": len(real_values),
             "raw_token_count_including_sync": len(real_values) + 1,
@@ -672,14 +688,14 @@ def main() -> None:
             "decoded_values": real_values,
         },
         "latest_message": {
-            "id": 4422186,
+            "id": 9900000,
             "deviceid": 120177,
             "type": "data",
-            "record_id": "f512dd48-36b1-11e8-b047-0242ac120002",
+            "record_id": "legacy-obscured-record-id",
             "logged": "2018-04-02 20:10:59",
             "run_start": "2018-04-02 16:10:58",
-            "orgid": "7175",
-            "data": json.dumps({"data": real_b64, "tags": ["_SIMPLESTRING_", "_SOCKETAPI_", "_DEVICE_120177_", "_TAG_764_", "type:data", "device:cd2.2-006"]}),
+            "orgid": "0000",
+            "data": json.dumps({"data": real_b64, "tags": ["_SIMPLESTRING_", "_SOCKETAPI_", "_DEVICE_120177_", "_TAG_OBSCURED_", "type:data", "device:cd2.2-006-obscured"]}),
             "device_meta_data": json.dumps({"m_version": 1, "dev_fw_string": "dash-SARA-U260-0.9.13"}),
             "fullness": "13304.00",
             "power_low": real_metric["power_low"],
@@ -693,7 +709,8 @@ def main() -> None:
             "updated_at": "2018-04-02 20:10:59",
         },
     }
-    all_records.append(real_reference)
+    # Deliberately not appended to generated datasets in this repository.
+    # The published package is synthetic-only.
 
     write_jsonl(OUT_DIR / "all_runs.jsonl", all_records)
 
@@ -705,8 +722,8 @@ def main() -> None:
         "generator": "generate_mock_compaction_data.py",
         "seed": 424242,
         "basis": {
-            "real_reference_samples": len(real_values),
-            "real_reference_split_index": 41,
+            "calibration_sample_count": len(real_values),
+            "calibration_reference_split_index": 41,
             "expected_single_samples": 70,
             "normal_operating_band_approx": [29000, 44000],
             "sync_artifact_example": real_sync,
@@ -745,9 +762,14 @@ def main() -> None:
         ZIP_PATH.unlink()
     with zipfile.ZipFile(ZIP_PATH, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=6) as zf:
         for path in sorted(OUT_DIR.rglob("*")):
+            if path == ZIP_PATH:
+                continue
             zf.write(path, path.relative_to(OUT_DIR.parent))
 
-    print(json.dumps({"zip_path": str(ZIP_PATH), "output_dir": str(OUT_DIR), "summary": summary}, indent=2))
+    print(f"Wrote {summary['record_count']} records to raw_payload_runs/all_runs.jsonl")
+    print("Wrote scenario files to raw_payload_runs/scenarios/")
+    print(f"Wrote manifest and summary files to {OUT_DIR}")
+    print(f"Wrote archive to {ZIP_PATH}")
 
 
 if __name__ == "__main__":

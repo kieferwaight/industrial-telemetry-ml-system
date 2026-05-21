@@ -7,7 +7,7 @@
     "raw_payload_runs": {
       "path": "raw_payload_runs/",
       "schema_version": "mock_compactor_run.v1",
-      "records": 726,
+      "records": 725,
       "scenario_count": 14,
       "primary_files": [
         "all_runs.jsonl",
@@ -35,8 +35,7 @@
         "clean_waveform_dataset.jsonl",
         "graphs/*.png",
         "reference_image_classification.md",
-        "inference_demo.py",
-        "generate_waveform_benchmark.py"
+        "inference_demo.py"
       ],
       "best_for": [
         "known-label waveform classification",

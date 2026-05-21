@@ -1,12 +1,12 @@
 {
   "name": "mock_compaction_jsonl_runs",
   "schema_version": "mock_compactor_run.v1",
-  "generated_at_utc": "2026-05-12T18:16:58.604716+00:00",
+  "generated_at_utc": "2026-05-21T10:08:28.767828+00:00",
   "generator": "generate_mock_compaction_data.py",
   "seed": 424242,
   "basis": {
-    "real_reference_samples": 147,
-    "real_reference_split_index": 41,
+    "calibration_sample_count": 74,
+    "calibration_reference_split_index": 41,
     "expected_single_samples": 70,
     "normal_operating_band_approx": [
       29000,
@@ -115,7 +115,7 @@
     }
   ],
   "validation_summary": {
-    "record_count": 726,
+    "record_count": 725,
     "scenario_counts": {
       "base_single_light": 80,
       "base_single_medium": 100,
@@ -130,12 +130,11 @@
       "low_battery_weak_signal_noisy": 35,
       "baseline_drift": 40,
       "dropout_missing_values": 30,
-      "triple_run_buffered": 20,
-      "real_double_run_reference": 1
+      "triple_run_buffered": 20
     },
     "label_counts": {
       "standard_single_run": 260,
-      "double_run": 181,
+      "double_run": 180,
       "standard_single_run_with_dip": 45,
       "startup_spike": 40,
       "truncated": 40,
@@ -147,10 +146,10 @@
     },
     "sample_count_min": 18,
     "sample_count_max": 214,
-    "sample_count_mean": 88.03,
+    "sample_count_mean": 87.94,
     "power_low_min": 25000,
     "power_peak_max": 51378,
     "records_with_missing_value_slots": 30,
-    "records_with_split_indices": 201
+    "records_with_split_indices": 200
   }
 }

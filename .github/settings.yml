@@ -1,0 +1,3 @@
+repository:
+  description: Applied ML case study for industrial telemetry, waveform inference, and condition-based dispatch
+  topics: machine-learning, mlops, iot, telemetry, time-series, signal-processing, industrial-ai, synthetic-data
