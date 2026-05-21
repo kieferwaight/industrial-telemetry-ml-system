@@ -1,2 +1,3 @@
-# This repository uses Python standard library only for included scripts.
-# Kept intentionally empty for reproducibility and dependency clarity.
+# Core demo and scripts use Python standard library only.
+# This file is kept empty to emphasize zero-dependency reproducibility.
+# Use for optional extensions (e.g., notebooks, advanced testing) only.

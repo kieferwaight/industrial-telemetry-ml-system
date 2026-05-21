@@ -1,0 +1,26 @@
+[project]
+name = "industrial-telemetry-ml-system"
+version = "0.1.0"
+description = "Applied ML case study for industrial telemetry, waveform inference, and condition-based dispatch"
+readme = "README.md"
+authors = [
+    { name = "Kiefer Waight", email = "kiefer.waight@uta.edu" }
+]
+license = { text = "MIT" }
+keywords = ["machine-learning", "mlops", "iot", "telemetry", "time-series", "signal-processing"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/kieferwaight/industrial-telemetry-ml-system"
+Issues = "https://github.com/kieferwaight/industrial-telemetry-ml-system/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

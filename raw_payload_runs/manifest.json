@@ -1,7 +1,7 @@
 {
   "name": "mock_compaction_jsonl_runs",
   "schema_version": "mock_compactor_run.v1",
-  "generated_at_utc": "2026-05-21T10:08:28.767828+00:00",
+  "generated_at_utc": "2026-05-21T14:35:32.520636+00:00",
   "generator": "generate_mock_compaction_data.py",
   "seed": 424242,
   "basis": {

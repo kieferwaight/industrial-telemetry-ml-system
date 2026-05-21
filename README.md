@@ -118,15 +118,19 @@ It demonstrates feature extraction, train/test evaluation, confusion behavior, a
 
 ![End-to-end model evolution workflow](case-study/assets/figure-diagram-end-to-end-model-evolution-workflow.png)
 
-### 2) Device and Operational Context
+### 2) Full Pipeline Architecture (Traditional vs. Sensor)
+
+![Traditional vs sensor comparison](case-study/assets/figure-diagram-traditional-vs-sensor-comparison.png)
+
+### 3) Device and Operational Context
 
 ![IoT device operational workflow](case-study/assets/figure-diagram-iot-device-operational-workflow.png)
 
-### 3) Core Sensing Innovation (Electromagnetic Clamp)
+### 4) Core Sensing Innovation (Electromagnetic Clamp)
 
 ![Non-invasive electromagnetic sensor on primary cable](case-study/assets/figure_1.3a_non-invasive_electromagnetic_sensor_clamped_around_the_primary_cable.png)
 
-### 4) AI/ML Inference and Signal Intelligence Flow
+### 5) AI/ML Inference and Signal Intelligence Flow
 
 ![Fullness inference workflow](case-study/assets/figure-diagram-fullness-inference-workflow.png)
 
@@ -199,6 +203,20 @@ Single-row inference example:
 }
 ```
 
+### Run the inference API (Experimental)
+
+A lightweight zero-dependency API for real-time inference.
+
+```bash
+make run-api
+```
+
+Once running, you can test it with a POST request:
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"features": {"duration_s": 20, "peak_current_a": 40, "mean_current_a": 25, "area_under_curve_a_s": 500, "peak_timing_s": 10, "peak_timing_ratio": 0.5, "ramp_slope_a_per_s": 4, "release_slope_a_per_s": -2, "early_energy_ratio": 0.3, "compression_variability": 0.1}}' http://localhost:8080
+```
+
 ### Regenerate synthetic raw payload runs
 
 ```bash
@@ -222,9 +240,25 @@ Wrote scenario files to raw_payload_runs/scenarios/
 
 ```bash
 make run-demo
+make run-api
 make generate-raw
 make test
 ```
+
+## Future Roadmap
+
+- [ ] **Advanced EDA Notebooks**: Adding detailed visualization of signal drift and feature distributions.
+- [ ] **Dockerization**: Providing a containerized version of the inference API.
+- [ ] **Extended Synthetic Scenarios**: More edge cases for construction sites and mechanical failures.
+- [ ] **Model Comparison**: Adding a baseline Logistic Regression or Random Forest for comparison with KNN.
+
+## Community and Feedback
+
+This project is an open-source case study. We welcome feedback, questions, and contributions!
+
+- **GitHub Discussions**: Feel free to start a thread in the [Discussions](https://github.com/kieferwaight/industrial-telemetry-ml-system/discussions) tab.
+- **Issues**: If you find a bug in the demo scripts or an error in the narrative, please open an [Issue](https://github.com/kieferwaight/industrial-telemetry-ml-system/issues).
+- **Contributions**: See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to help improve the datasets or case study.
 
 ## Repository Layout
 
