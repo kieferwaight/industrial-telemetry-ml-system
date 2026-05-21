@@ -1,15 +1,38 @@
 # The Compactor Became The Sensor
 ### From Electrical Signal To Dispatch Intelligence
 
+[![Applied AI](https://img.shields.io/badge/Applied%20AI-Real%20Operations-0b7a75?style=for-the-badge)](../README.md)
+[![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Production%20Inference-005f73?style=for-the-badge)](03_Technical_Architecture.md#38-machine-learning-inference)
+[![Scale](https://img.shields.io/badge/Scale-1000%2B%20Locations%20%7C%2046%20States-9b2226?style=for-the-badge)](#deployment-scale)
+[![Latest](https://img.shields.io/badge/Latest%20Version-May%202026-ee9b00?style=for-the-badge)](#latest-version)
+
 *Back to [repository root](../README.md) · Related: [clean waveform benchmark](../clean_waveform_benchmark/README.md) · Related: [raw payload runs](../raw_payload_runs/README.md)*
 
-![Case study cover](assets/style-style-element-blueprint-compactor-cover.png)
 
 ---
 
 This technical case study details how electromagnetic telemetry, signal processing, and machine learning were deployed across a nationally distributed waste environment to transform ordinary compactors into operational intelligence systems.
 
 The markdown chapter set in this directory is the canonical repository version of the case study.
+
+## Latest Version
+
+- Status: current canonical case study release
+- Updated: May 2026
+- Landing page entry point: [root README](../README.md)
+
+## High-Impact Visual Entry Points
+
+- System narrative map: [assets/figure-diagram-end-to-end-model-evolution-workflow.png](assets/figure-diagram-end-to-end-model-evolution-workflow.png)
+- Device operations context: [assets/figure-diagram-iot-device-operational-workflow.png](assets/figure-diagram-iot-device-operational-workflow.png)
+- Non-invasive sensing innovation: [assets/figure_1.3a_non-invasive_electromagnetic_sensor_clamped_around_the_primary_cable.png](assets/figure_1.3a_non-invasive_electromagnetic_sensor_clamped_around_the_primary_cable.png)
+- AI/ML inference flow: [assets/figure-diagram-fullness-inference-workflow.png](assets/figure-diagram-fullness-inference-workflow.png)
+
+## Contact
+
+For research and educational collaboration:
+
+- kiefer.waight@uta.edu
 
 ---
 

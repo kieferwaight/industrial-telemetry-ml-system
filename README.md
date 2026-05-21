@@ -1,138 +1,133 @@
 # Industrial Telemetry ML System
 
-> Synthetic telemetry datasets, a production-style technical case study, and runnable inference examples for industrial compactor behavior modeling.
+## Read The Full Case Study (PDF)
 
-![Industrial telemetry cover](case-study/assets/style-style-element-blueprint-compactor-cover.png)
+[![Open PDF Case Study](https://img.shields.io/badge/Open%20PDF%20Case%20Study-Primary%20Reading%20Link-c1121f?style=for-the-badge)](The%20Compactor%20Became%20The%20Sensor%20-%20Kiefer%20Waight%20-%20Applied%20Machine%20Learning.pdf)
 
-## Overview
+Direct link: [The Compactor Became The Sensor - Kiefer Waight - Applied Machine Learning.pdf](The%20Compactor%20Became%20The%20Sensor%20-%20Kiefer%20Waight%20-%20Applied%20Machine%20Learning.pdf)
 
-This repository is organized around three polished entry points:
+[![Applied AI](https://img.shields.io/badge/Applied%20AI-Production%20Deployed-0b7a75?style=for-the-badge)](case-study/README.md)
+[![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Operational%20Intelligence-005f73?style=for-the-badge)](case-study/README.md)
+[![Scale](https://img.shields.io/badge/Scale-1000%2B%20Locations%20%7C%2046%20States-9b2226?style=for-the-badge)](case-study/README.md#deployment-scale)
+[![Case Study](https://img.shields.io/badge/Case%20Study-Latest%20Version%20May%202026-ee9b00?style=for-the-badge)](case-study/README.md)
 
-| Area | Start here | Why it matters |
-|---|---|---|
-| **Case study** | [`case-study/README.md`](case-study/README.md) | Explains the system narrative, technical architecture, modeling strategy, and business significance |
-| **Sample test data** | [`raw_payload_runs/README.md`](raw_payload_runs/README.md) and [`clean_waveform_benchmark/README.md`](clean_waveform_benchmark/README.md) | Provides synthetic telemetry inputs for parser tests, waveform analysis, and controlled experiments |
-| **Inference example** | [`clean_waveform_benchmark/inference_demo.py`](clean_waveform_benchmark/inference_demo.py) | Demonstrates a compact end-to-end prediction flow on known-label waveform features |
+Real-world artificial intelligence and machine learning for industrial telemetry, deployed in active operations across 1,000+ customer locations in 46 states.
 
-## Quick navigation
+This repository centers on a practical, production-proven idea: use non-invasive electromagnetic sensing to turn compactors into continuous operational intelligence systems.
 
-- **Read the narrative:** [`case-study/README.md`](case-study/README.md)
-- **Run the demo:** [`clean_waveform_benchmark/inference_demo.py`](clean_waveform_benchmark/inference_demo.py)
-- **Inspect clean benchmark data:** [`clean_waveform_benchmark/`](clean_waveform_benchmark/)
-- **Inspect payload-style test data:** [`raw_payload_runs/`](raw_payload_runs/)
-- **See the repository inventory:** [`unified_manifest.json`](unified_manifest.json)
+## Latest Case Study Release
 
-## Quick start
+- Latest canonical version: [case-study/README.md](case-study/README.md)
+- Last updated: May 2026
+- Scope: full technical narrative from sensing hardware to dispatch automation and business outcomes
 
-### 1. Read the case study
+## Why This Repository Stands Out
 
-The repository narrative is in [`case-study/README.md`](case-study/README.md), which links to each chapter and major section of the write-up.
+- Real applied AI and ML, not a toy notebook
+- Deployment reality at national scale
+- Closed-loop learning with ground-truth feedback from operations
+- End-to-end view from signal capture to decision automation
 
-### 2. Run the inference example
+## Featured System Visuals
 
-From the repository root:
+### 1) End-to-End System Evolution
+
+![End-to-end model evolution workflow](case-study/assets/figure-diagram-end-to-end-model-evolution-workflow.png)
+
+### 2) Device and Operational Context
+
+![IoT device operational workflow](case-study/assets/figure-diagram-iot-device-operational-workflow.png)
+
+### 3) Core Sensing Innovation (Electromagnetic Clamp)
+
+![Non-invasive electromagnetic sensor on primary cable](case-study/assets/figure_1.3a_non-invasive_electromagnetic_sensor_clamped_around_the_primary_cable.png)
+
+### 4) AI/ML Inference and Signal Intelligence Flow
+
+![Fullness inference workflow](case-study/assets/figure-diagram-fullness-inference-workflow.png)
+
+## Case Study Table of Contents (From the Landing Page)
+
+### Part I - Foundation
+
+- [01 Executive Summary](case-study/01_Executive_Summary.md)
+- [02 Core Insight](case-study/02_Core_Insight.md)
+
+### Part II - Technical System
+
+- [03 Technical Architecture](case-study/03_Technical_Architecture.md)
+- [04 Signal Modeling](case-study/04_Signal_Modeling.md)
+
+### Part III - The Hard Problems
+
+- [05 Why This Was Hard](case-study/05_Why_This_Was_Hard.md)
+- [06 Ground Truth and Labeling](case-study/06_Ground_Truth_and_Labeling.md)
+- [07 Model Evolution](case-study/07_Model_Evolution.md)
+- [08 Failure Cases](case-study/08_Failure_Cases.md)
+- [09 Signal Drift](case-study/09_Signal_Drift.md)
+
+### Part IV - Operational Reality
+
+- [10 Operational Integration](case-study/10_Operational_Integration.md)
+- [11 Nationwide Scale](case-study/11_Nationwide_Scale.md)
+- [12 Business Outcome](case-study/12_Business_Outcome.md)
+
+### Part V - Strategic Framing
+
+- [13 Strategic Significance](case-study/13_Strategic_Significance.md)
+- [14 Appendix A: Public Evidence](case-study/14_Appendix_A.md)
+
+### Deep Section Navigation
+
+For section-level links across all chapters, use the full index in [case-study/README.md](case-study/README.md).
+
+## Quick Start
+
+### Read the full narrative
+
+- [case-study/README.md](case-study/README.md)
+
+### Run the inference example
 
 ```bash
 python3 clean_waveform_benchmark/inference_demo.py
 ```
 
-This prints:
+### Explore the supporting datasets
 
-- training/test counts
-- prediction accuracy on the synthetic benchmark labels
-- example predictions
-- a single-record inference example
+- [clean_waveform_benchmark/README.md](clean_waveform_benchmark/README.md)
+- [raw_payload_runs/README.md](raw_payload_runs/README.md)
+- [unified_manifest.json](unified_manifest.json)
 
-### 3. Explore the data layers
-
-Use the two datasets for different jobs:
-
-| Dataset | Best for |
-|---|---|
-| [`raw_payload_runs/`](raw_payload_runs/) | Parser tests, base64 CSV decoding, anomaly scenarios, split/double-run handling |
-| [`clean_waveform_benchmark/`](clean_waveform_benchmark/) | Feature engineering demos, clean-label experiments, graph-based explanation, inference walkthroughs |
-
-## Repository highlights
-
-### Case study
-
-The case study documents how electrical telemetry, signal processing, and machine learning can transform industrial compactors into operational intelligence systems.
-
-- 14 chaptered markdown files
-- section-level navigation throughout
-- dedicated assets folder with diagrams, photos, and waveform illustrations
-- polished technical framing for GitHub browsing and sharing
-
-### Sample data
-
-Two complementary synthetic datasets are included:
-
-1. **`raw_payload_runs/`** for payload-like ingestion and parser validation
-2. **`clean_waveform_benchmark/`** for labeled waveform inspection and inference demonstrations
-
-Together, they support both **systems testing** and **model explanation**.
-
-### Example code
-
-The repository includes a lightweight Python inference demo that uses engineered waveform features to predict:
-
-- `site_class`
-- `fill_state`
-
-The example is intentionally simple so the modeling mechanics are easy to inspect and explain.
-
-## Featured visuals
-
-| System architecture | Signal behavior |
-|---|---|
-| ![System architecture](case-study/assets/figure-diagram-traditional-vs-sensor-comparison.png) | ![Fill-state timing shift](clean_waveform_benchmark/graphs/overlay_fill_state_timing_shift.png) |
-
-| Model evolution | Site-class waveform behavior |
-|---|---|
-| ![Model evolution](case-study/assets/figure-diagram-end-to-end-model-evolution-workflow.png) | ![Site class behavior](clean_waveform_benchmark/graphs/overlay_site_class_behavior.png) |
-
-## Repository structure
+## Repository Layout
 
 ```text
 industrial-telemetry-ml-system/
-├── README.md
-├── .gitignore
-├── unified_manifest.json
-├── case-study/
-│   ├── README.md
-│   ├── 01_Executive_Summary.md
-│   ├── ...
-│   ├── 14_Appendix_A.md
-│   └── assets/
-├── clean_waveform_benchmark/
-│   ├── README.md
-│   ├── clean_waveform_dataset.json
-│   ├── clean_waveform_dataset.jsonl
-│   ├── graphs/
-│   ├── inference_demo.py
-│   └── reference_image_classification.md
-└── raw_payload_runs/
-    ├── README.md
-    ├── all_runs.jsonl
-    ├── manifest.json
-    ├── schema.json
-    ├── scenarios/
-    └── validation_summary.csv
+|- README.md
+|- unified_manifest.json
+|- case-study/
+|  |- README.md
+|  |- 01_Executive_Summary.md ... 14_Appendix_A.md
+|  |- assets/
+|- clean_waveform_benchmark/
+|  |- README.md
+|  |- clean_waveform_dataset.json
+|  |- clean_waveform_dataset.jsonl
+|  |- graphs/
+|  |- inference_demo.py
+|- raw_payload_runs/
+|  |- README.md
+|  |- all_runs.jsonl
+|  |- scenarios/
+|  |- schema.json
 ```
 
-## Documentation map
+## Contact and Research Collaboration
 
-| Need | Go here |
-|---|---|
-| Understand the full system and story | [`case-study/README.md`](case-study/README.md) |
-| Review chapter-by-chapter technical details | [`case-study/`](case-study/) |
-| Browse clean synthetic benchmark data | [`clean_waveform_benchmark/README.md`](clean_waveform_benchmark/README.md) |
-| Browse payload-style parser test data | [`raw_payload_runs/README.md`](raw_payload_runs/README.md) |
-| Run the inference walk-through | [`clean_waveform_benchmark/inference_demo.py`](clean_waveform_benchmark/inference_demo.py) |
-| Check high-level dataset metadata | [`unified_manifest.json`](unified_manifest.json) |
+- Email: kiefer.waight@uta.edu
+- Focus: industrial AI, machine learning operations, and practical telemetry-driven decision systems
 
 ## Notes
 
-- All included data is synthetic and intended for experimentation, explanation, and testing.
-- The case study is the primary narrative artifact for the repository.
-- The repository is designed to be browsable directly on GitHub, with README-based navigation at the root and subdirectory level.
+- This repository emphasizes practical, deployed AI/ML systems in real operations.
+- Included datasets are synthetic and structured for testing, benchmarking, and explanation.
