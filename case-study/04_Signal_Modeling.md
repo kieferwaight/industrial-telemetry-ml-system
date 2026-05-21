@@ -102,8 +102,8 @@ This became one of the strongest predictive signals. The model learned that **re
 
 > *The shape of the curve became more important than a single reading.*
 
-![Waveform Comparison — Empty State](assets/ch04-cycle-waveform-empty.png)
-![Waveform Comparison — Full State](assets/ch04-cycle-waveform-full.png)
+![Waveform Comparison — Empty State](assets/figure-waveform-empty-compactor-crush-cycle.png)
+![Waveform Comparison — Full State](assets/figure-waveform-full-compactor-crush-cycle.png)
 
 ## 4.5 Cycle Duration Was a Strong Behavioral Signal
 
@@ -181,7 +181,7 @@ The solution was **device fingerprinting**. Each compactor developed its own lea
 
 The system therefore learned **relative change, not absolute values**. This was a critical architectural decision. Without normalization, false positives would have overwhelmed the system.
 
-![Device Fingerprint Diagram](assets/ch04-device-fingerprint-diagram.png)
+![Device Fingerprint Diagram](assets/figure-diagram-device-fingerprint-comparison.png)
 
 ## 4.9 Site-Type Segmentation
 
@@ -210,7 +210,7 @@ Cycle 4 -> Suddenly low resistance
 
 These environments forced the models to learn persistence patterns, resistance consistency, and repeated-cycle resolution behavior.
 
-![Site Type Diagram](assets/ch04-site-type-diagram.png)
+![Site Type Diagram](assets/figure-diagram-site-type-waveform-overlay.png)
 
 ## 4.10 Signal Drift
 
@@ -234,7 +234,7 @@ This transformed operational activity into supervised learning data.
 
 The feedback loop gradually improved feature weighting, confidence scoring, anomaly detection, and site-specific prediction quality.
 
-![Signal Progression Diagram](assets/ch04-signal-progression-diagram.png)
+![Signal Progression Diagram](assets/figure-diagram-empty-vs-full-waveform-overlay.png)
 
 ## 4.12 Confidence Scoring
 
@@ -275,7 +275,7 @@ That distinction changed the entire modeling approach. The platform was no longe
 
 > behavior, resistance, rhythm, drift, anomaly, and physical interaction between machinery and material.
 
-![Signal Analysis Wide](assets/ch04-signal-analysis-wide.png)
+![Signal Analysis Wide](assets/figure-diagram-fullness-inference-workflow.png)
 
 The compactor became a continuously evolving industrial signal system.
 

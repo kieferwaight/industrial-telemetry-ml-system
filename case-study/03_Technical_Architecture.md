@@ -11,7 +11,7 @@ The system was designed as a full-stack industrial intelligence pipeline. Its pu
 
 To achieve that, the architecture connected physical equipment, cellular telemetry, signal processing, machine learning, and operational workflows into a single closed-loop system.
 
-![Compactor Hardware](assets/ch03-compactor-hardware-photo.png)
+![Compactor Hardware](assets/figure-illustration-compactor-hardware-city-scene.png)
 
 ---
 
@@ -50,7 +50,7 @@ The system was designed as a **full-stack industrial intelligence pipeline**. It
 
 To achieve that, the architecture connected physical equipment, cellular telemetry, signal processing, machine learning, and operational workflows into a single **closed-loop system**.
 
-![Compactor Hardware](assets/ch03-compactor-hardware-photo.png)
+![Compactor Hardware](assets/figure-illustration-compactor-hardware-city-scene.png)
 
 ---
 
@@ -110,7 +110,7 @@ Raw telemetry from industrial equipment was inherently noisy. The processing lay
 
 The most critical transformation was **cycle segmentation** — treating compaction as discrete operational events instead of undifferentiated signal streams.
 
-![Architecture Overview Diagram](assets/ch03-architecture-overview-diagram.png)
+![Architecture Overview Diagram](assets/figure-illustration-waste-collection-architecture-overview.png)
 
 ---
 
@@ -168,7 +168,7 @@ The inference layer converted engineered features into operational predictions.
 
 > Predictions were only valuable if they supported decisions.
 
-![Telemetry Flow Diagram](assets/ch03-telemetry-flow-diagram.png)
+![Telemetry Flow Diagram](assets/figure-diagram-electromagnetic-sensor-telemetry-flow.png)
 
 ---
 
@@ -237,7 +237,7 @@ Each real-world service event generated a training signal.
 
 ## 3.12 Architecture Summary
 
-![Full System Architecture](assets/ch03-full-system-architecture.png)
+![Full System Architecture](assets/figure-diagram-traditional-vs-sensor-comparison.png)
 
 The architecture succeeded because it unified the full intelligence pipeline into a single continuous system:
 

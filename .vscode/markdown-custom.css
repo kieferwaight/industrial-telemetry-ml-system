@@ -1,0 +1,52 @@
+:root {
+  --deep-navy: #0A1D57;
+  --accent-blue: #789CF0;
+  --page-bg: #FFFFFF;
+}
+
+body {
+  background: var(--page-bg);
+  color: var(--deep-navy);
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+td,
+th {
+  color: var(--deep-navy);
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+blockquote {
+  border-left: 6px solid var(--deep-navy);
+  margin: 1rem 0;
+  padding: 0.4rem 1rem;
+  background: #F7F9FF;
+}
+
+blockquote,
+blockquote p {
+  color: var(--accent-blue);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+ul li::marker,
+ol li::marker {
+  color: var(--accent-blue);
+  font-weight: 700;
+}
+
+table thead th {
+  background: var(--accent-blue);
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 700;
+}

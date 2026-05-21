@@ -3,7 +3,7 @@
 
 *Back to [repository root](../README.md) · Related: [clean waveform benchmark](../clean_waveform_benchmark/README.md) · Related: [raw payload runs](../raw_payload_runs/README.md)*
 
-![Case study cover](assets/cover-photo.png)
+![Case study cover](assets/style-style-element-blueprint-compactor-cover.png)
 
 ---
 
@@ -253,25 +253,25 @@ All extracted images are available in the [`assets/`](assets/) directory.
 
 | File | Description |
 |------|-------------|
-| `assets/cover-photo.png` | Cover photograph |
-| `assets/ch03-compactor-hardware-photo.png` | Compactor hardware in field |
-| `assets/ch03-architecture-overview-diagram.png` | System architecture overview |
-| `assets/ch03-telemetry-flow-diagram.png` | Telemetry data flow |
-| `assets/ch03-full-system-architecture.png` | Full pipeline architecture |
-| `assets/ch04-cycle-waveform-empty.png` | Empty-state crush cycle waveform |
-| `assets/ch04-cycle-waveform-full.png` | Full-state crush cycle waveform |
-| `assets/ch04-signal-progression-diagram.png` | Signal progression over fill states |
-| `assets/ch04-feature-engineering-diagram.png` | Feature engineering structure |
-| `assets/ch04-device-fingerprint-diagram.png` | Device fingerprint normalization |
-| `assets/ch04-site-type-diagram.png` | Site-type segmentation model |
-| `assets/ch04-signal-analysis-wide.png` | Signal analysis full view |
-| `assets/ch07-model-evolution-diagram.png` | Model evolution phases |
-| `assets/ch10-operational-workflow-photo.png` | Operational workflow context |
-| `assets/ch11-nationwide-deployment-photo.png` | Nationwide deployment context |
-| `assets/ch11-scale-operations-photo.png` | Scale operations photo |
-| `assets/ch12-business-outcome-photo.png` | Business outcome context |
-| `assets/ch13-strategic-significance-diagram.png` | Strategic significance diagram |
-| `assets/ch13-closing-synthesis-photo.png` | Closing synthesis image |
+| `assets/style-style-element-blueprint-compactor-cover.png` | Cover photograph |
+| `assets/figure-illustration-compactor-hardware-city-scene.png` | Compactor hardware in field |
+| `assets/figure-illustration-waste-collection-architecture-overview.png` | System architecture overview |
+| `assets/figure-diagram-electromagnetic-sensor-telemetry-flow.png` | Telemetry data flow |
+| `assets/figure-diagram-traditional-vs-sensor-comparison.png` | Full pipeline architecture |
+| `assets/figure-waveform-empty-compactor-crush-cycle.png` | Empty-state crush cycle waveform |
+| `assets/figure-waveform-full-compactor-crush-cycle.png` | Full-state crush cycle waveform |
+| `assets/figure-diagram-empty-vs-full-waveform-overlay.png` | Signal progression over fill states |
+| `assets/figure-diagram-compactor-feature-engineering.png` | Feature engineering structure |
+| `assets/figure-diagram-device-fingerprint-comparison.png` | Device fingerprint normalization |
+| `assets/figure-diagram-site-type-waveform-overlay.png` | Site-type segmentation model |
+| `assets/figure-diagram-fullness-inference-workflow.png` | Signal analysis full view |
+| `assets/figure-diagram-end-to-end-model-evolution-workflow.png` | Model evolution phases |
+| `assets/figure-diagram-iot-device-operational-workflow.png` | Operational workflow context |
+| `assets/figure-diagram-nationwide-deployment-workflow.png` | Nationwide deployment context |
+| `assets/figure-diagram-signal-processing-normalization-workflow.png` | Scale operations photo |
+| `assets/figure-mockup-business-outcome-dashboard.png` | Business outcome context |
+| `assets/figure-diagram-human-feedback-loop.png` | Strategic significance diagram |
+| `assets/planning-mockup-executive-summary-pdf-draft.png` | Closing synthesis image |
 
 ---
 

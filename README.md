@@ -2,7 +2,7 @@
 
 > Synthetic telemetry datasets, a production-style technical case study, and runnable inference examples for industrial compactor behavior modeling.
 
-![Industrial telemetry cover](case-study/assets/cover-photo.png)
+![Industrial telemetry cover](case-study/assets/style-style-element-blueprint-compactor-cover.png)
 
 ## Overview
 
@@ -85,11 +85,11 @@ The example is intentionally simple so the modeling mechanics are easy to inspec
 
 | System architecture | Signal behavior |
 |---|---|
-| ![System architecture](case-study/assets/ch03-full-system-architecture.png) | ![Fill-state timing shift](clean_waveform_benchmark/graphs/overlay_fill_state_timing_shift.png) |
+| ![System architecture](case-study/assets/figure-diagram-traditional-vs-sensor-comparison.png) | ![Fill-state timing shift](clean_waveform_benchmark/graphs/overlay_fill_state_timing_shift.png) |
 
 | Model evolution | Site-class waveform behavior |
 |---|---|
-| ![Model evolution](case-study/assets/ch07-model-evolution-diagram.png) | ![Site class behavior](clean_waveform_benchmark/graphs/overlay_site_class_behavior.png) |
+| ![Model evolution](case-study/assets/figure-diagram-end-to-end-model-evolution-workflow.png) | ![Site class behavior](clean_waveform_benchmark/graphs/overlay_site_class_behavior.png) |
 
 ## Repository structure
 

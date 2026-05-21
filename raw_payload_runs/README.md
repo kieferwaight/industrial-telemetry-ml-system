@@ -2,7 +2,7 @@
 
 *Back to [repository root](../README.md) · Related: [case study](../case-study/README.md) · Compare with [clean waveform benchmark](../clean_waveform_benchmark/README.md)*
 
-![Telemetry flow diagram](../case-study/assets/ch03-telemetry-flow-diagram.png)
+![Telemetry flow diagram](../case-study/assets/figure-diagram-electromagnetic-sensor-telemetry-flow.png)
 
 ## Purpose
 
