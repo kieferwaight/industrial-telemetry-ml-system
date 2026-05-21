@@ -1,52 +1,344 @@
 :root {
-  --deep-navy: #0A1D57;
-  --accent-blue: #789CF0;
-  --page-bg: #FFFFFF;
+  /* Color tokens */
+  --deep-navy: #0a1d57;
+  --accent-blue: #789cf0;
+  --page-bg: #ffffff;
+
+  /* Type scale */
+  --font-size-body: 14.67px;
+  --font-size-h1: 33.33px;
+  --font-size-h2: 20px;
+  --font-size-subheader: 18.67px;
+  --font-size-blockquote: 18.67px;
+  --font-size-table: 11px;
+
+  /* Inter core tokens: weights */
+  --inter-weight-thin: 100;
+  --inter-weight-extra-light: 200;
+  --inter-weight-light: 300;
+  --inter-weight-regular: 400;
+  --inter-weight-medium: 500;
+  --inter-weight-semi-bold: 600;
+  --inter-weight-bold: 700;
+  --inter-weight-extra-bold: 800;
+  --inter-weight-black: 900;
+
+  /* Inter core tokens: styles */
+  --inter-style-regular: normal;
+  --inter-style-italic: italic;
+
+  /* Inter named variants */
+  --inter-thin-weight: var(--inter-weight-thin);
+  --inter-thin-style: var(--inter-style-regular);
+  --inter-thin-italic-weight: var(--inter-weight-thin);
+  --inter-thin-italic-style: var(--inter-style-italic);
+
+  --inter-extra-light-weight: var(--inter-weight-extra-light);
+  --inter-extra-light-style: var(--inter-style-regular);
+  --inter-extra-light-italic-weight: var(--inter-weight-extra-light);
+  --inter-extra-light-italic-style: var(--inter-style-italic);
+
+  --inter-light-weight: var(--inter-weight-light);
+  --inter-light-style: var(--inter-style-regular);
+  --inter-light-italic-weight: var(--inter-weight-light);
+  --inter-light-italic-style: var(--inter-style-italic);
+
+  --inter-regular-weight: var(--inter-weight-regular);
+  --inter-regular-style: var(--inter-style-regular);
+  --inter-regular-italic-weight: var(--inter-weight-regular);
+  --inter-regular-italic-style: var(--inter-style-italic);
+
+  --inter-medium-weight: var(--inter-weight-medium);
+  --inter-medium-style: var(--inter-style-regular);
+  --inter-medium-italic-weight: var(--inter-weight-medium);
+  --inter-medium-italic-style: var(--inter-style-italic);
+
+  --inter-semi-bold-weight: var(--inter-weight-semi-bold);
+  --inter-semi-bold-style: var(--inter-style-regular);
+  --inter-semi-bold-italic-weight: var(--inter-weight-semi-bold);
+  --inter-semi-bold-italic-style: var(--inter-style-italic);
+
+  --inter-bold-weight: var(--inter-weight-bold);
+  --inter-bold-style: var(--inter-style-regular);
+  --inter-bold-italic-weight: var(--inter-weight-bold);
+  --inter-bold-italic-style: var(--inter-style-italic);
+
+  --inter-extra-bold-weight: var(--inter-weight-extra-bold);
+  --inter-extra-bold-style: var(--inter-style-regular);
+  --inter-extra-bold-italic-weight: var(--inter-weight-extra-bold);
+  --inter-extra-bold-italic-style: var(--inter-style-italic);
+
+  --inter-black-weight: var(--inter-weight-black);
+  --inter-black-style: var(--inter-style-regular);
+  --inter-black-italic-weight: var(--inter-weight-black);
+  --inter-black-italic-style: var(--inter-style-italic);
 }
 
 body {
   background: var(--page-bg);
   color: var(--deep-navy);
   font-family: "Inter", "Segoe UI", sans-serif;
+  font-size: var(--font-size-body);
+  font-weight: var(--inter-regular-weight);
+  font-style: var(--inter-regular-style);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+h1 {
+  color: var(--deep-navy);
+  font-family: "Inter", "Segoe UI", sans-serif;
+  font-size: var(--font-size-h1);
+  font-weight: var(--inter-extra-bold-weight);
+  font-style: var(--inter-extra-bold-style);
+  margin-bottom: 0.2em;
+  padding-bottom: 0em;
+}
+
+h2 {
+  color: var(--deep-navy);
+  font-family: "Inter", "Segoe UI", sans-serif;
+  font-size: var(--font-size-h2);
+  font-weight: var(--inter-bold-weight);
+  font-style: var(--inter-bold-style);
+  text-transform: uppercase;
+}
+
+.section-number {
+  display: inline-block;
+  width: 50px;
+  text-align: left;
+  color: var(--accent-blue);
+}
+
+.subheader {
+  font-family: "Inter", sans-serif;
+  font-weight: var(--inter-medium-weight); /* Medium */
+  font-style: var(--inter-medium-style);
+  font-size: var(--font-size-subheader); /* 14pt */
+  letter-spacing: 0.09em; /* 9% */
+  line-height: 0.6; /* tight leading */
+  color: var(--accent-blue);
+  margin-top: 2pt; /* before paragraph */
+  margin-bottom: 10pt; /* after paragraph */
+  text-transform: uppercase;
+}
+
 p,
 li,
 td,
 th {
   color: var(--deep-navy);
   font-family: "Inter", "Segoe UI", sans-serif;
+  font-size: var(--font-size-body);
+  font-weight: var(--inter-regular-weight);
+  font-style: var(--inter-regular-style);
 }
 
 blockquote {
-  border-left: 6px solid var(--deep-navy);
-  margin: 1rem 0;
-  padding: 0.4rem 1rem;
-  background: #F7F9FF;
+  border-left: 3px solid var(--deep-navy);
+  margin: 1em 0;
+  padding-left: 0.13in;
+  margin-left: 0;
+  border-radius: 0;
+  background: none;
+  color: var(--accent-blue);
+  font-family: "Inter", "Segoe UI", sans-serif;
+  font-size: var(--font-size-blockquote);
+  font-weight: var(--inter-medium-weight);
+  font-style: var(--inter-medium-style);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
 }
 
-blockquote,
 blockquote p {
+  margin: 0;
   color: var(--accent-blue);
-  text-transform: uppercase;
-  font-weight: 700;
+}
+
+ul,
+ol {
+  padding-left: 0.2in;
 }
 
 ul li::marker,
 ol li::marker {
   color: var(--accent-blue);
-  font-weight: 700;
+}
+
+table {
+  width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+  font-size: var(--font-size-body);
+  border-bottom: 0.5px solid var(--accent-blue);
+  margin-bottom: 2em;
 }
 
 table thead th {
   background: var(--accent-blue);
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
-  font-weight: 700;
+  text-align: left;
+  font-weight: var(--inter-bold-weight);
+  font-style: var(--inter-bold-style);
+  font-size: var(--font-size-table);
 }
+
+table tbody td {
+  color: var(--deep-navy);
+  font-size: var(--font-size-table);
+}
+
+table tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+
+table tbody tr:nth-child(even) {
+  background: #f7f7f6;
+}
+
+table th,
+table td {
+  padding: 6px 8px;
+}
+
+/* Image Layout Utilities */
+.img {
+  margin: 1rem 0;
+}
+
+.img img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Widths */
+.w-full {
+  width: 100%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+/* Alignment */
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left {
+  margin-right: auto;
+}
+
+.right {
+  margin-left: auto;
+}
+
+/* Float (optional) */
+.float-right {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+.float-left {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+/* Clear floats */
+.clear {
+  clear: both;
+}
+
+/* Optional caption */
+.img-caption {
+  margin-top: 0.4rem;
+  color: var(--deep-navy);
+  font-size: var(--font-size-table);
+  font-weight: var(--inter-regular-weight);
+  font-style: var(--inter-regular-style);
+  text-align: center;
+}
+
+/* Citation tags */
+.cite-tag {
+  display: inline-block;
+  padding: 0.08em 0.45em;
+  margin: 0 0.12em;
+  border-radius: 6px;
+  background: var(--accent-blue);
+  color: #ffffff !important;
+  text-decoration: none;
+  font-size: 0.72em;
+  line-height: 1.15;
+  font-weight: var(--inter-medium-weight);
+  font-style: var(--inter-medium-style);
+  vertical-align: super;
+}
+
+.cite-tag:hover,
+.cite-tag:visited,
+.cite-tag:active {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/* Chapter navigation */
+.chapter-nav {
+  border-top: 0.5px solid var(--accent-blue);
+  margin-top: 2rem;
+  padding-top: 0.65rem;
+}
+
+.chapter-nav-toc {
+  text-align: center;
+  margin-bottom: 0.6rem;
+  font-size: 0.82em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.chapter-nav-prev,
+.chapter-nav-next {
+  font-size: 0.9em;
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+.chapter-nav-prev:hover,
+.chapter-nav-next:hover,
+.chapter-nav-prev:visited,
+.chapter-nav-next:visited,
+.chapter-nav-prev:active,
+.chapter-nav-next:active {
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+.chapter-nav-prev {
+  float: left;
+}
+
+.chapter-nav-next {
+  float: right;
+}
+
+.chapter-nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+

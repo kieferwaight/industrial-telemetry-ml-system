@@ -6,6 +6,10 @@
   "editor.stickyScroll.enabled": false,
   "workbench.tree.enableStickyScroll": false,
   "notebook.stickyScroll.enabled": false,
+  "workbench.editorAssociations": {
+    "*.md": "vscode.markdown.preview.editor"
+  },
+  "markdown.preview.doubleClickToSwitchToEditor": true,
   "markdown.styles": [
     ".vscode/markdown-custom.css"
   ],

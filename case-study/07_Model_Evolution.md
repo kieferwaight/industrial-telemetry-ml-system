@@ -212,4 +212,8 @@ The final system was not a single model. It was **the accumulated result of tele
 
 That iterative evolution is what transformed the project from "remote monitoring" into "machine-learning-driven operational intelligence."
 
-*Previous: [06 — Ground Truth & Labeling](06_Ground_Truth_and_Labeling.md) | Next: [08 — Failure Cases](08_Failure_Cases.md)*
+<div class="chapter-nav">
+    <div class="chapter-nav-toc"><a href="README.md#table-of-contents">Table Of Contents</a></div>
+    <a class="chapter-nav-prev" href="06_Ground_Truth_and_Labeling.md">&larr; 06 - Ground Truth &amp; Labeling</a>
+    <a class="chapter-nav-next" href="08_Failure_Cases.md">08 - Failure Cases &rarr;</a>
+</div>

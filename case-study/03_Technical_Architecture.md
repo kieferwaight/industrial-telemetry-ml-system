@@ -1,4 +1,4 @@
-# 03 — Technical Architecture
+# 03 Technical Architecture
 ## From Electrical Noise to Operational Intelligence
 
 ---
@@ -37,7 +37,7 @@ The telemetry device acted as the bridge between industrial equipment and cloud 
 
 Compactors were distributed across diverse environments, requiring a network layer capable of supporting geographically dispersed assets. Cellular telemetry allowed each device to transmit operational data without depending on local infrastructure.
 
-# 03 — Technical Architecture
+# 03 Technical Architecture
 *From Electrical Noise to Operational Intelligence*
 
 ---
@@ -263,4 +263,8 @@ Machine learning was not an isolated analytical layer. It was **embedded within 
 
 ---
 
-*Previous: [02 — Core Insight](02_Core_Insight.md) | Next: [04 — Signal Modeling](04_Signal_Modeling.md)*
+<div class="chapter-nav">
+    <div class="chapter-nav-toc"><a href="README.md#table-of-contents">Table Of Contents</a></div>
+    <a class="chapter-nav-prev" href="02_Core_Insight.md">&larr; 02 - Core Insight</a>
+    <a class="chapter-nav-next" href="04_Signal_Modeling.md">04 - Signal Modeling &rarr;</a>
+</div>

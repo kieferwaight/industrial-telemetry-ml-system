@@ -188,4 +188,8 @@ The nationwide footprint validated the telemetry architecture, the machine-learn
 
 > **The platform was credible because it survived exposure to real distributed industrial conditions at scale.**
 
-*Previous: [10 — Operational Integration](10_Operational_Integration.md) | Next: [12 — Business Outcome](12_Business_Outcome.md)*
+<div class="chapter-nav">
+    <div class="chapter-nav-toc"><a href="README.md#table-of-contents">Table Of Contents</a></div>
+    <a class="chapter-nav-prev" href="10_Operational_Integration.md">&larr; 10 - Operational Integration</a>
+    <a class="chapter-nav-next" href="12_Business_Outcome.md">12 - Business Outcome &rarr;</a>
+</div>

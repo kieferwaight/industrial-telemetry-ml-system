@@ -193,4 +193,8 @@ This is what transformed the project from "remote monitoring" into "continuously
 
 The compactor was not simply producing telemetry. The entire waste operation became the learning system.
 
-*Previous: [05 — Why This Was Hard](05_Why_This_Was_Hard.md) | Next: [07 — Model Evolution](07_Model_Evolution.md)*
+<div class="chapter-nav">
+    <div class="chapter-nav-toc"><a href="README.md#table-of-contents">Table Of Contents</a></div>
+    <a class="chapter-nav-prev" href="05_Why_This_Was_Hard.md">&larr; 05 - Why This Was Hard</a>
+    <a class="chapter-nav-next" href="07_Model_Evolution.md">07 - Model Evolution &rarr;</a>
+</div>

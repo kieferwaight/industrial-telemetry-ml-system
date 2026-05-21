@@ -281,4 +281,8 @@ The compactor became a continuously evolving industrial signal system.
 
 The machine-learning challenge was not recognizing trash. The challenge was **learning how physical resistance expresses itself through electrical behavior over time**.
 
-*Previous: [03 — Technical Architecture](03_Technical_Architecture.md) | Next: [05 — Why This Was Hard](05_Why_This_Was_Hard.md)*
+<div class="chapter-nav">
+    <div class="chapter-nav-toc"><a href="README.md#table-of-contents">Table Of Contents</a></div>
+    <a class="chapter-nav-prev" href="03_Technical_Architecture.md">&larr; 03 - Technical Architecture</a>
+    <a class="chapter-nav-next" href="05_Why_This_Was_Hard.md">05 - Why This Was Hard &rarr;</a>
+</div>

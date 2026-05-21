@@ -234,4 +234,8 @@ The value did not come from a model score or a waveform classification. The valu
 
 That operational integration is what transformed the project from "industrial telemetry" into "production operational intelligence."
 
-*Previous: [09 — Signal Drift](09_Signal_Drift.md) | Next: [11 — Nationwide Scale](11_Nationwide_Scale.md)*
+<div class="chapter-nav">
+    <div class="chapter-nav-toc"><a href="README.md#table-of-contents">Table Of Contents</a></div>
+    <a class="chapter-nav-prev" href="09_Signal_Drift.md">&larr; 09 - Signal Drift</a>
+    <a class="chapter-nav-next" href="11_Nationwide_Scale.md">11 - Nationwide Scale &rarr;</a>
+</div>

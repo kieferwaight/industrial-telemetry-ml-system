@@ -165,4 +165,8 @@ The project was never fundamentally about trash compactors.
 
 That principle extends far beyond waste operations. It represents a broader shift toward machine learning as a foundational layer for interpreting and orchestrating the physical world.
 
-*Previous: [12 — Business Outcome](12_Business_Outcome.md) | Next: [14 — Appendix A: Public Evidence](14_Appendix_A.md)*
+<div class="chapter-nav">
+    <div class="chapter-nav-toc"><a href="README.md#table-of-contents">Table Of Contents</a></div>
+    <a class="chapter-nav-prev" href="12_Business_Outcome.md">&larr; 12 - Business Outcome</a>
+    <a class="chapter-nav-next" href="14_Appendix_A.md">14 - Appendix A: Public Evidence &rarr;</a>
+</div>

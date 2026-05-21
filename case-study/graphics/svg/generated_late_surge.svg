@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewBox="0 0 3508 2481" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-miterlimit:9;" data-mode="overlay">
+    <title>Scenario B - Late Surge</title><desc>Generated comparison chart from base-graph.svg template.</desc><style id="Dynamic-Mode-Style" type="text/css">svg {
+      --ink: rgb(10, 29, 87);
+      --accent: rgb(120, 156, 240);
+      --full-wave-fill: var(--accent);
+      --empty-wave-stroke: var(--ink);
+      --full-opacity: 1;
+      --empty-opacity: 1;
+      --full-legend-opacity: 1;
+      --empty-legend-opacity: 1;
+      --focus-opacity: 1;
+    }
+    #High-Resistance-Full-State-Chart path {
+      fill: var(--full-wave-fill) !important;
+      opacity: var(--full-opacity);
+    }
+    #Baseline-Empty-State-Chart path {
+      fill: none !important;
+      stroke: var(--empty-wave-stroke) !important;
+      opacity: var(--empty-opacity);
+    }
+    #Legend-Item-2 { opacity: var(--full-legend-opacity); }
+    #Legend-Item-1 { opacity: var(--empty-legend-opacity); }
+    #Focus { opacity: var(--focus-opacity); }
+    svg[data-mode="overlay"] {
+      --full-opacity: 1;
+      --empty-opacity: 1;
+      --full-legend-opacity: 1;
+      --empty-legend-opacity: 1;
+      --focus-opacity: 1;
+    }
+    svg[data-mode="empty"] {
+      --full-opacity: .18;
+      --empty-opacity: 1;
+      --full-legend-opacity: .35;
+      --empty-legend-opacity: 1;
+      --focus-opacity: 0;
+    }
+    svg[data-mode="full"] {
+      --full-opacity: 1;
+      --empty-opacity: .25;
+      --full-legend-opacity: 1;
+      --empty-legend-opacity: .35;
+      --focus-opacity: 1;
+    }</style><rect id="Background" x="0" y="0" width="3507.874" height="2480.315" style="fill:white;stroke:white;stroke-width:4.17px;stroke-dasharray:20.833,20.833,0,0,0,0;" />
+    <g id="Data">
+        <g id="Baseline-Empty-State-Chart" serif:id="Baseline Empty State Chart" transform="matrix(1.14199,0,0,1.176663,-122.065504,-811.47158)">
+            <path d="M483.42,2346.02 L674.67,2296.73 L865.91,2235.11 L1057.16,2173.50 L1248.40,2111.88 L1439.65,2062.59 L1630.89,2013.30 L1822.14,1951.68 L2013.38,1877.74 L2204.63,1791.48 L2395.88,1742.19 L2587.12,1803.81 L2778.37,1976.33 L2873.99,2099.56" style="fill:none;stroke:rgb(10,29,87);stroke-width:10.78px;stroke-linejoin:round;stroke-miterlimit:1.5;" />
+        </g>
+        <g id="High-Resistance-Full-State-Chart" serif:id="High Resistance Full State Chart" transform="matrix(1.14199,0,0,1.176663,-122.065504,-811.47158)">
+            <path d="M483.42,2567.83 L483.42,2346.02 L674.67,2296.73 L865.91,2235.11 L1057.16,2185.82 L1248.40,2124.20 L1439.65,2050.27 L1630.89,1964.00 L1822.14,1853.10 L2013.38,1742.19 L2204.63,1631.28 L2395.88,1545.02 L2587.12,1594.32 L2778.37,1853.10 L2873.99,2037.94 L2873.99,2567.83 Z" style="fill:rgb(120,156,240);" />
+        </g>
+    </g>
+    <g id="Graph" transform="matrix(1.14199,0,0,1.176663,-122.065504,-811.47158)">
+        <g id="Y-Axis" serif:id="Y Axis">
+            <g id="Y-Axis-Line" serif:id="Y Axis Line" transform="matrix(1,0,0,1,-203,782)">
+                <path d="M503,232L498,1434" style="fill:none;stroke:rgb(10,29,87);stroke-width:10.78px;stroke-linejoin:round;stroke-miterlimit:1.5;" />
+            </g>
+            <g id="Y-Axis-Arrow" serif:id="Y Axis Arrow" transform="matrix(1,0,0,1,-202,633)">
+                <path d="M502,332L479,391C493.418,385.144 508.99,384.701 526,391L502,332Z" style="fill:rgb(10,29,87);stroke:rgb(10,29,87);stroke-width:1.08px;stroke-linejoin:round;stroke-miterlimit:1.5;" />
+            </g>
+            <g id="Y-Axis-Label" serif:id="Y Axis Label" transform="matrix(0,-1,1,0,-1830.099808,2663.90459)">
+                <g transform="matrix(62.5,0,0,62.5,1642.193409,2029.204072)">
+                </g>
+                <text x="1055.951px" y="2029.204px" style="font-family:'Inter-Bold', 'Inter';font-weight:700;font-size:62.5px;fill:rgb(10,29,87);">POWER / CURRENT</text>
+            </g>
+        </g>
+        <g id="X-Axis" serif:id="X Axis">
+            <g id="X-Axis-Line" serif:id="X Axis Line" transform="matrix(1,0,0,1,-203,782)">
+                <path d="M498,1434L3281,1442" style="fill:none;stroke:rgb(10,29,87);stroke-width:10.78px;stroke-linejoin:round;stroke-miterlimit:1.5;" />
+            </g>
+            <g id="X-Axis-Arrow" serif:id="X Axis Arrow" transform="matrix(0,1,-1,0,3466,1720)">
+                <path d="M502,332L479,391C493.418,385.144 508.99,384.701 526,391L502,332Z" style="fill:rgb(10,29,87);stroke:rgb(10,29,87);stroke-width:1.08px;stroke-linejoin:round;stroke-miterlimit:1.5;" />
+            </g>
+            <g id="X-Axis-Label" serif:id="X Axis Label" transform="matrix(1,0,0,1,1869.949658,334.231307)">
+                <g transform="matrix(62.5,0,0,62.5,1211.407276,2029.204072)">
+                </g>
+                <text x="1055.951px" y="2029.204px" style="font-family:'Inter-Bold', 'Inter';font-weight:700;font-size:62.5px;fill:rgb(10,29,87);">TIME</text>
+            </g>
+        </g>
+    </g>
+    <g id="Legend" transform="matrix(1.14199,0,0,1.176663,-5.246719,-703.985443)">
+        <g id="Legend-Item-2" serif:id="Legend Item 2">
+            <g id="Label" transform="matrix(1,0,0,1,105,396)">
+                <g transform="matrix(62.5,0,0,62.5,1436.077686,2029.204072)">
+                </g>
+                <g transform="matrix(62.5,0,0,62.5,2024.883838,2029.204072)">
+                </g>
+                <g transform="matrix(62.5,0,0,62.5,2048.443409,2029.204072)">
+                </g>
+                <text x="1055.951px" y="2029.204px" style="font-family:'Inter-Bold', 'Inter';font-weight:700;font-size:62.5px;fill:rgb(10,29,87);">FULL STATE (LATE SURGE)</text>
+            </g>
+            <g id="Line-Sample" serif:id="Line Sample" transform="matrix(1,0,0,1,-203,998)">
+                <path d="M1097.969,1407.312C1094.948,1407.295 1092.51,1404.901 1092.527,1401.97C1092.544,1399.038 1095.01,1396.672 1098.031,1396.688L1109.406,1396.751C1112.427,1396.768 1114.865,1399.161 1114.848,1402.093C1114.831,1405.024 1112.365,1407.391 1109.344,1407.374L1097.969,1407.312ZM1132.094,1407.499C1129.073,1407.482 1126.635,1405.089 1126.652,1402.157C1126.669,1399.226 1129.135,1396.859 1132.156,1396.876L1154.906,1397.001C1157.926,1397.018 1160.365,1399.411 1160.348,1402.343C1160.331,1405.274 1157.864,1407.641 1154.844,1407.624L1132.094,1407.499ZM1177.594,1407.749C1174.573,1407.732 1172.135,1405.339 1172.152,1402.407C1172.169,1399.476 1174.635,1397.109 1177.656,1397.126L1200.406,1397.251C1203.426,1397.268 1205.865,1399.661 1205.848,1402.593C1205.831,1405.524 1203.365,1407.891 1200.344,1407.874L1177.594,1407.749ZM1223.094,1407.999C1220.073,1407.982 1217.635,1405.589 1217.652,1402.657C1217.669,1399.726 1220.135,1397.359 1223.156,1397.376L1245.906,1397.501C1248.927,1397.518 1251.365,1399.911 1251.348,1402.843C1251.331,1405.774 1248.865,1408.141 1245.844,1408.124L1223.094,1407.999ZM1268.594,1408.249C1265.573,1408.232 1263.135,1405.839 1263.152,1402.907C1263.169,1399.976 1265.635,1397.609 1268.656,1397.626L1280.031,1397.688C1283.052,1397.705 1285.49,1400.099 1285.473,1403.03C1285.456,1405.962 1282.99,1408.328 1279.969,1408.312L1268.594,1408.249Z" style="fill:rgb(120,156,240);" />
+            </g>
+        </g>
+        <g id="Legend-Item-1" serif:id="Legend Item 1" transform="matrix(1,0,0,1,0,-102)">
+            <g id="Label1" serif:id="Label" transform="matrix(1,0,0,1,105,396)">
+                <g transform="matrix(62.5,0,0,62.5,1507.610889,2029.204072)">
+                </g>
+                <g transform="matrix(62.5,0,0,62.5,1835.613819,2029.204072)">
+                </g>
+                <g transform="matrix(62.5,0,0,62.5,1859.173389,2029.204072)">
+                </g>
+                <text x="1055.951px" y="2029.204px" style="font-family:'Inter-Bold', 'Inter';font-weight:700;font-size:62.5px;fill:rgb(10,29,87);">EMPTY STATE (BASELINE)</text>
+            </g>
+            <g id="Line-Sample1" serif:id="Line Sample" transform="matrix(1,0,0,1,-203,998)">
+                <path d="M1098,1402L1280,1403" style="fill:none;stroke:rgb(10,29,87);stroke-width:10.78px;stroke-linejoin:round;stroke-miterlimit:1.5;" />
+            </g>
+        </g>
+    </g>
+<g id="Focus"><g id="Focus-Line" serif:id="Focus Line"><path d="M2832.40,2210.00 L2832.40,760.00" style="fill:none;stroke:rgb(120,156,240);stroke-width:4.1px;stroke-dasharray:20.5,20.5;" /></g><g id="Focus-Sign" serif:id="Focus Sign"><rect x="2492.40" y="880.00" width="700" height="220" rx="22" style="fill:white;fill-opacity:.18;stroke:rgb(120,156,240);stroke-width:3px;" /><text x="2842.40" y="950.00" text-anchor="middle" style="font-family:'Inter-Bold','Inter';font-weight:700;font-size:48px;fill:rgb(10,29,87);">HIGHER PEAK</text><text x="2842.40" y="1005.00" text-anchor="middle" style="font-family:'Inter-Bold','Inter';font-weight:700;font-size:48px;fill:rgb(10,29,87);">ARRIVES LATE</text><text x="2842.40" y="1060.00" text-anchor="middle" style="font-family:'Inter-Bold','Inter';font-weight:700;font-size:48px;fill:rgb(10,29,87);">UNDER FULL STATE</text></g></g></svg>

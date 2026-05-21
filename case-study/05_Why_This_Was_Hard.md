@@ -216,4 +216,8 @@ The system succeeded because it combined industrial telemetry, behavioral modeli
 
 The machine-learning achievement was not recognizing fullness directly. The achievement was learning **how fullness expresses itself indirectly through the behavior of real industrial machinery over time**.
 
-*Previous: [04 — Signal Modeling](04_Signal_Modeling.md) | Next: [06 — Ground Truth & Labeling](06_Ground_Truth_and_Labeling.md)*
+<div class="chapter-nav">
+	<div class="chapter-nav-toc"><a href="README.md#table-of-contents">Table Of Contents</a></div>
+	<a class="chapter-nav-prev" href="04_Signal_Modeling.md">&larr; 04 - Signal Modeling</a>
+	<a class="chapter-nav-next" href="06_Ground_Truth_and_Labeling.md">06 - Ground Truth &amp; Labeling &rarr;</a>
+</div>

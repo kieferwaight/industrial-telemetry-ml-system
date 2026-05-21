@@ -15,23 +15,23 @@ The markdown chapter set in this directory is the canonical repository version o
 
 ## Repository Navigation
 
-| Need | Go here |
-|---|---|
-| Read the full repository overview | [Root README](../README.md) |
-| Inspect clean benchmark data | [clean_waveform_benchmark/](../clean_waveform_benchmark/) |
-| Inspect payload-style parser test data | [raw_payload_runs/](../raw_payload_runs/) |
-| Run the example inference demo | [clean_waveform_benchmark/inference_demo.py](../clean_waveform_benchmark/inference_demo.py) |
+| Need                                   | Go here                                                                                     |
+| -------------------------------------- | ------------------------------------------------------------------------------------------- |
+| Read the full repository overview      | [Root README](../README.md)                                                                 |
+| Inspect clean benchmark data           | [clean_waveform_benchmark/](../clean_waveform_benchmark/)                                   |
+| Inspect payload-style parser test data | [raw_payload_runs/](../raw_payload_runs/)                                                   |
+| Run the example inference demo         | [clean_waveform_benchmark/inference_demo.py](../clean_waveform_benchmark/inference_demo.py) |
 
 ---
 
 ## Deployment Scale
 
-| Metric | Value |
-|--------|-------|
-| Customer Locations | 1,000+ |
-| States | 46 |
-| Telemetry | 24/7 industrial monitoring |
-| Signal Events | Millions analyzed |
+| Metric             | Value                      |
+| ------------------ | -------------------------- |
+| Customer Locations | 1,000+                     |
+| States             | 46                         |
+| Telemetry          | 24/7 industrial monitoring |
+| Signal Events      | Millions analyzed          |
 
 ---
 
@@ -39,10 +39,10 @@ The markdown chapter set in this directory is the canonical repository version o
 
 ### Part I — Foundation
 
-| Chapter | Title | Description |
-|---------|-------|-------------|
-| [01](01_Executive_Summary.md) | **Executive Summary** | Business problem, technical strategy, research context, strategic significance |
-| [02](02_Core_Insight.md) | **Core Insight** | The compactor already contained the signal — crush cycles as behavioral telemetry |
+| Chapter                       | Title                 | Description                                                                       |
+| ----------------------------- | --------------------- | --------------------------------------------------------------------------------- |
+| [01](01_Executive_Summary.md) | **Executive Summary** | Business problem, technical strategy, research context, strategic significance    |
+| [02](02_Core_Insight.md)      | **Core Insight**      | The compactor already contained the signal — crush cycles as behavioral telemetry |
 
 **Chapter 01 Sections:**
 - [1.1 The Business Problem](01_Executive_Summary.md#11-the-business-problem)
@@ -61,10 +61,10 @@ The markdown chapter set in this directory is the canonical repository version o
 
 ### Part II — Technical System
 
-| Chapter | Title | Description |
-|---------|-------|-------------|
-| [03](03_Technical_Architecture.md) | **Technical Architecture** | Full-stack industrial intelligence pipeline — telemetry, processing, ML, dispatch |
-| [04](04_Signal_Modeling.md) | **Signal Modeling** | Reading industrial behavior as a time-series system — waveforms, baselines, features |
+| Chapter                            | Title                      | Description                                                                          |
+| ---------------------------------- | -------------------------- | ------------------------------------------------------------------------------------ |
+| [03](03_Technical_Architecture.md) | **Technical Architecture** | Full-stack industrial intelligence pipeline — telemetry, processing, ML, dispatch    |
+| [04](04_Signal_Modeling.md)        | **Signal Modeling**        | Reading industrial behavior as a time-series system — waveforms, baselines, features |
 
 **Chapter 03 Sections:**
 - [3.1 System Overview](03_Technical_Architecture.md#31-system-overview)
@@ -99,13 +99,13 @@ The markdown chapter set in this directory is the canonical repository version o
 
 ### Part III — The Hard Problems
 
-| Chapter | Title | Description |
-|---------|-------|-------------|
-| [05](05_Why_This_Was_Hard.md) | **Why This Was Hard** | No ground truth sensor, drifting environments, noisy labels, physical complexity |
-| [06](06_Ground_Truth_and_Labeling.md) | **Ground Truth & Labeling** | How operational workflows became the training dataset |
-| [07](07_Model_Evolution.md) | **Model Evolution** | Six phases from raw observation to confidence-weighted automation |
-| [08](08_Failure_Cases.md) | **Failure Cases** | Construction false positives, dense material misclassification, operator noise |
-| [09](09_Signal_Drift.md) | **Signal Drift** | Equipment wear, maintenance resets, occupancy changes, continuous recalibration |
+| Chapter                               | Title                       | Description                                                                      |
+| ------------------------------------- | --------------------------- | -------------------------------------------------------------------------------- |
+| [05](05_Why_This_Was_Hard.md)         | **Why This Was Hard**       | No ground truth sensor, drifting environments, noisy labels, physical complexity |
+| [06](06_Ground_Truth_and_Labeling.md) | **Ground Truth & Labeling** | How operational workflows became the training dataset                            |
+| [07](07_Model_Evolution.md)           | **Model Evolution**         | Six phases from raw observation to confidence-weighted automation                |
+| [08](08_Failure_Cases.md)             | **Failure Cases**           | Construction false positives, dense material misclassification, operator noise   |
+| [09](09_Signal_Drift.md)              | **Signal Drift**            | Equipment wear, maintenance resets, occupancy changes, continuous recalibration  |
 
 **Chapter 05 Sections:**
 - [5.1 There Was No Ground Truth Sensor](05_Why_This_Was_Hard.md#51-there-was-no-ground-truth-sensor)
@@ -173,11 +173,11 @@ The markdown chapter set in this directory is the canonical repository version o
 
 ### Part IV — Operational Reality
 
-| Chapter | Title | Description |
-|---------|-------|-------------|
-| [10](10_Operational_Integration.md) | **Operational Integration** | Dispatch loop, condition-based hauling, invoice auditing, automation path |
-| [11](11_Nationwide_Scale.md) | **Nationwide Scale** | 1,000+ locations, cellular deployment, heterogeneous equipment, generalization |
-| [12](12_Business_Outcome.md) | **Business Outcome** | Haul reduction, overflow avoidance, operational visibility, strategic value |
+| Chapter                             | Title                       | Description                                                                    |
+| ----------------------------------- | --------------------------- | ------------------------------------------------------------------------------ |
+| [10](10_Operational_Integration.md) | **Operational Integration** | Dispatch loop, condition-based hauling, invoice auditing, automation path      |
+| [11](11_Nationwide_Scale.md)        | **Nationwide Scale**        | 1,000+ locations, cellular deployment, heterogeneous equipment, generalization |
+| [12](12_Business_Outcome.md)        | **Business Outcome**        | Haul reduction, overflow avoidance, operational visibility, strategic value    |
 
 **Chapter 10 Sections:**
 - [10.1 The Dispatch Workflow](10_Operational_Integration.md#101-the-dispatch-workflow)
@@ -226,10 +226,10 @@ The markdown chapter set in this directory is the canonical repository version o
 
 ### Part V — Strategic Framing
 
-| Chapter | Title | Description |
-|---------|-------|-------------|
-| [13](13_Strategic_Significance.md) | **Strategic Significance** | The compactor as instrument, industrial AI thesis, closed-loop moat |
-| [14](14_Appendix_A.md) | **Appendix A: Public Evidence** | Source register, citation matrix, validated claims |
+| Chapter                            | Title                           | Description                                                         |
+| ---------------------------------- | ------------------------------- | ------------------------------------------------------------------- |
+| [13](13_Strategic_Significance.md) | **Strategic Significance**      | The compactor as instrument, industrial AI thesis, closed-loop moat |
+| [14](14_Appendix_A.md)             | **Appendix A: Public Evidence** | Source register, citation matrix, validated claims                  |
 
 **Chapter 13 Sections:**
 - [13.1 The Compactor Became an Instrument](13_Strategic_Significance.md#131-the-compactor-became-an-instrument)
@@ -251,27 +251,104 @@ All extracted images are available in the [`assets/`](assets/) directory.
 
 **Key named assets:**
 
-| File | Description |
-|------|-------------|
-| `assets/style-style-element-blueprint-compactor-cover.png` | Cover photograph |
-| `assets/figure-illustration-compactor-hardware-city-scene.png` | Compactor hardware in field |
-| `assets/figure-illustration-waste-collection-architecture-overview.png` | System architecture overview |
-| `assets/figure-diagram-electromagnetic-sensor-telemetry-flow.png` | Telemetry data flow |
-| `assets/figure-diagram-traditional-vs-sensor-comparison.png` | Full pipeline architecture |
-| `assets/figure-waveform-empty-compactor-crush-cycle.png` | Empty-state crush cycle waveform |
-| `assets/figure-waveform-full-compactor-crush-cycle.png` | Full-state crush cycle waveform |
-| `assets/figure-diagram-empty-vs-full-waveform-overlay.png` | Signal progression over fill states |
-| `assets/figure-diagram-compactor-feature-engineering.png` | Feature engineering structure |
-| `assets/figure-diagram-device-fingerprint-comparison.png` | Device fingerprint normalization |
-| `assets/figure-diagram-site-type-waveform-overlay.png` | Site-type segmentation model |
-| `assets/figure-diagram-fullness-inference-workflow.png` | Signal analysis full view |
-| `assets/figure-diagram-end-to-end-model-evolution-workflow.png` | Model evolution phases |
-| `assets/figure-diagram-iot-device-operational-workflow.png` | Operational workflow context |
-| `assets/figure-diagram-nationwide-deployment-workflow.png` | Nationwide deployment context |
-| `assets/figure-diagram-signal-processing-normalization-workflow.png` | Scale operations photo |
-| `assets/figure-mockup-business-outcome-dashboard.png` | Business outcome context |
-| `assets/figure-diagram-human-feedback-loop.png` | Strategic significance diagram |
-| `assets/planning-mockup-executive-summary-pdf-draft.png` | Closing synthesis image |
+| File                                                                    | Description                         |
+| ----------------------------------------------------------------------- | ----------------------------------- |
+| `assets/style-style-element-blueprint-compactor-cover.png`              | Cover photograph                    |
+| `assets/figure-illustration-compactor-hardware-city-scene.png`          | Compactor hardware in field         |
+| `assets/figure-illustration-waste-collection-architecture-overview.png` | System architecture overview        |
+| `assets/figure-diagram-electromagnetic-sensor-telemetry-flow.png`       | Telemetry data flow                 |
+| `assets/figure-diagram-traditional-vs-sensor-comparison.png`            | Full pipeline architecture          |
+| `assets/figure-waveform-empty-compactor-crush-cycle.png`                | Empty-state crush cycle waveform    |
+| `assets/figure-waveform-full-compactor-crush-cycle.png`                 | Full-state crush cycle waveform     |
+| `assets/figure-diagram-empty-vs-full-waveform-overlay.png`              | Signal progression over fill states |
+| `assets/figure-diagram-compactor-feature-engineering.png`               | Feature engineering structure       |
+| `assets/figure-diagram-device-fingerprint-comparison.png`               | Device fingerprint normalization    |
+| `assets/figure-diagram-site-type-waveform-overlay.png`                  | Site-type segmentation model        |
+| `assets/figure-diagram-fullness-inference-workflow.png`                 | Signal analysis full view           |
+| `assets/figure-diagram-end-to-end-model-evolution-workflow.png`         | Model evolution phases              |
+| `assets/figure-diagram-iot-device-operational-workflow.png`             | Operational workflow context        |
+| `assets/figure-diagram-nationwide-deployment-workflow.png`              | Nationwide deployment context       |
+| `assets/figure-diagram-signal-processing-normalization-workflow.png`    | Scale operations photo              |
+| `assets/figure-mockup-business-outcome-dashboard.png`                   | Business outcome context            |
+| `assets/figure-diagram-human-feedback-loop.png`                         | Strategic significance diagram      |
+| `assets/planning-mockup-executive-summary-pdf-draft.png`                | Closing synthesis image             |
+
+---
+
+## Image Layout Utilities
+
+Use a single wrapper plus utility classes for consistent image placement in Markdown preview.
+
+### Base Pattern
+
+```html
+<div class="img w-60 center">
+	<img src="assets/figure.png" alt="Figure" />
+</div>
+```
+
+### Available Utility Classes
+
+- Wrapper: `.img`
+- Widths: `.w-full`, `.w-75`, `.w-60`, `.w-50`, `.w-40`
+- Alignment: `.center`, `.left`, `.right`
+- Optional float: `.float-right`, `.float-left`
+- Float reset: `.clear`
+- Optional caption: `.img-caption`
+
+### Usage Patterns
+
+Centered image:
+
+```html
+<div class="img w-60 center">
+	<img src="assets/image.png" alt="Centered example" />
+</div>
+```
+
+Left aligned:
+
+```html
+<div class="img w-60 left">
+	<img src="assets/image.png" alt="Left example" />
+</div>
+```
+
+Right aligned:
+
+```html
+<div class="img w-40 right">
+	<img src="assets/image.png" alt="Right example" />
+</div>
+```
+
+Float right with wrapping text:
+
+```html
+<div class="img w-40 float-right">
+	<img src="assets/image.png" alt="Float example" />
+</div>
+
+This paragraph will wrap around the image in Markdown preview.
+
+<div class="clear"></div>
+```
+
+Optional caption:
+
+```html
+<div class="img w-60 center">
+	<img src="assets/image.png" alt="Caption example" />
+	<div class="img-caption">Optional caption text</div>
+</div>
+```
+
+Recommended defaults for this case study:
+
+- Use `.img w-60 center` for most figures.
+- Use `.img w-40 right` for tighter callout graphics.
+- Use `.float-right` only when text wrapping is intentional.
+- Add `.clear` after any floated image block.
 
 ---
 

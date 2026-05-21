@@ -180,4 +180,8 @@ The business value emerged from **integrating intelligence into operational work
 
 That distinction is what made the platform commercially meaningful.
 
-*Previous: [11 — Nationwide Scale](11_Nationwide_Scale.md) | Next: [13 — Strategic Significance](13_Strategic_Significance.md)*
+<div class="chapter-nav">
+    <div class="chapter-nav-toc"><a href="README.md#table-of-contents">Table Of Contents</a></div>
+    <a class="chapter-nav-prev" href="11_Nationwide_Scale.md">&larr; 11 - Nationwide Scale</a>
+    <a class="chapter-nav-next" href="13_Strategic_Significance.md">13 - Strategic Significance &rarr;</a>
+</div>

@@ -181,4 +181,8 @@ This transformed the challenge from "training a model" into **"maintaining a con
 
 The machine-learning value did not come from fitting one good model once. It came from building a platform capable of **adapting to changing physical reality over long operational time horizons**.
 
-*Previous: [08 — Failure Cases](08_Failure_Cases.md) | Next: [10 — Operational Integration](10_Operational_Integration.md)*
+<div class="chapter-nav">
+    <div class="chapter-nav-toc"><a href="README.md#table-of-contents">Table Of Contents</a></div>
+    <a class="chapter-nav-prev" href="08_Failure_Cases.md">&larr; 08 - Failure Cases</a>
+    <a class="chapter-nav-next" href="10_Operational_Integration.md">10 - Operational Integration &rarr;</a>
+</div>

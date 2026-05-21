@@ -169,4 +169,8 @@ That adaptive learning loop is what transformed the project from "telemetry moni
 
 The failure cases were not evidence the approach was weak. They were evidence that the system was operating against real-world industrial complexity rather than artificial laboratory conditions.
 
-*Previous: [07 — Model Evolution](07_Model_Evolution.md) | Next: [09 — Signal Drift](09_Signal_Drift.md)*
+<div class="chapter-nav">
+    <div class="chapter-nav-toc"><a href="README.md#table-of-contents">Table Of Contents</a></div>
+    <a class="chapter-nav-prev" href="07_Model_Evolution.md">&larr; 07 - Model Evolution</a>
+    <a class="chapter-nav-next" href="09_Signal_Drift.md">09 - Signal Drift &rarr;</a>
+</div>

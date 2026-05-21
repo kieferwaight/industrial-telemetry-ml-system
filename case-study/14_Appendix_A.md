@@ -99,5 +99,8 @@ The strongest defensible public conclusion is that **Sequoia operated at nationa
 - Sources scanned count from raw collection pass: **36**
 - This appendix is intentionally evidence-focused and does not repeat the full narrative case study body
 
-*Previous: [13 — Strategic Significance](13_Strategic_Significance.md)*
+<div class="chapter-nav">
+	<div class="chapter-nav-toc"><a href="README.md#table-of-contents">Table Of Contents</a></div>
+	<a class="chapter-nav-prev" href="13_Strategic_Significance.md">&larr; 13 - Strategic Significance</a>
+</div>
 *Return to: [Case Study Index](README.md)*
