@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="kiefer-waight-applied-machine-learning-industrial-telemetry.jpg" alt="Kiefer Waight - Industrial Telemetry ML System Repository Banner" width="100%">
+</p>
+
 # Industrial Telemetry ML System
 
 ## Read The Full Case Study (PDF)
